@@ -12,12 +12,8 @@ public interface ResourceRepository extends org.springframework.data.repository.
 	public Resource findById(Integer id);
 	public Resource findByUrl(String url);
 
-	@Query(value = "SELECT * FROM resources WHERE processed_sameas = false", nativeQuery = true)
-	public Set<Resource> getResourceToBeProcessedSameAs();
+	@Query(value = "SELECT * FROM resources WHERE processed = false", nativeQuery = true)
+	public Set<Resource> getResourceToBeProcessed();
 	
-	@Query(value = "SELECT * FROM resources WHERE processed_parents = false", nativeQuery = true)
-	public Set<Resource> getResourceToBeProcessedParents();
-	
-	@SuppressWarnings("unchecked")
 	public Resource save(Resource resource);
 }

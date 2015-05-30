@@ -1,0 +1,35 @@
+{
+  "datasets":[
+    {
+      "id":1,
+      "domain":"dbpedia.org",
+      "linked_with_datasets":[2,4],
+      "sameas_properties":["http://www.w3.org/2002/07/owl#sameAs"],
+      "sparql_endpoint": 
+      {
+        "url":"http://dbpedia.org/sparql",
+        "max_requests_second":10
+      }
+    },
+    {
+      "id":2,
+      "domain":"geonames.org"
+    },
+    {
+      "id":3,
+      "domain":"gadm.geovocab.org",
+      "child_of_properties":["http://gadm.geovocab.org/spatial#PP"]
+    },
+    {
+      "id":4,
+      "domain":"linkedgeodata.org",
+      "linked_with_datasets":[1],
+      "sameas_properties":["http://www.w3.org/2002/07/owl#sameAs","http://linkedgeodata.org/ontology/gadmSameAs"],
+      "sparql_endpoint": 
+      {
+        "url":"http://linkedgeodata.org/sparql",
+        "max_requests_second":10
+      }
+    }
+  ]
+}

@@ -15,18 +15,16 @@ public class Resource {
 	private int id;
 	private String url;
 	private String label;
-	private boolean processedSameAs;
-	private boolean processedParents;
+	private boolean processed;
 	
 	public Resource() {
 	}
 
-	public Resource(int id, String url, String label, boolean processedSameAs, boolean processedParents) {
+	public Resource(int id, String url, String label, boolean processed) {
 		this.id = id;
 		this.url = url;
 		this.label = label;
-		this.processedSameAs = processedSameAs;
-		this.processedParents = processedParents;
+		this.processed = processed;
 	}
 	
 	@Id
@@ -58,21 +56,12 @@ public class Resource {
 		this.label = label;
 	}
 
-	@Column(name = "processed_sameas", nullable = false)
-	public boolean isProcessedSameAs() {
-		return processedSameAs;
+	@Column(name = "processed", nullable = false)
+	public boolean isProcessed() {
+		return processed;
 	}
 
-	public void setProcessedSameAs(boolean processedSameAs) {
-		this.processedSameAs = processedSameAs;
-	}
-
-	@Column(name = "processed_parents", nullable = false)
-	public boolean isProcessedParents() {
-		return processedParents;
-	}
-
-	public void setProcessedParents(boolean processedParents) {
-		this.processedParents = processedParents;
+	public void setProcessed(boolean processed) {
+		this.processed = processed;
 	}
 }
