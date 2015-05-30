@@ -4,13 +4,10 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.stereotype.Service;
 
-import com.fabiosalvini.hierarchygenerator.database.repository.ResourceParentRepository;
-import com.fabiosalvini.hierarchygenerator.database.repository.ResourceRepository;
-import com.fabiosalvini.hierarchygenerator.database.repository.ResourceSameAsRepository;
-import com.fabiosalvini.hierarchygenerator.service.DatasetsManager;
-import com.fabiosalvini.hierarchygenerator.service.ResourceProcessor;
+import com.fabiosalvini.hierarchygenerator.service.ProcessorsManager;
 
 @Service
 public class ApplicationManager {
@@ -21,25 +18,24 @@ public class ApplicationManager {
 	protected ApplicationContext applicationContext;
 
 	@Autowired
-	private DatasetsManager datasetsManager;
-	@Autowired
-	private ResourceRepository resourceRepository;
-	@Autowired
-	private ResourceSameAsRepository resourceSameAsRepository;
-	@Autowired
-	private ResourceParentRepository resourceParentsRepository;
+	private ProcessorsManager processorsManager;
 
 	public ApplicationManager() {
 	}
 
 	public void start() {
-		
-		ResourceProcessor rp = new ResourceProcessor(datasetsManager,resourceRepository,resourceSameAsRepository,resourceParentsRepository,resourceRepository.getResourceToBeProcessed(), false);
-		rp.start();
-		
+		log.debug("Elaborating resources");
+		processorsManager.startElaboration();
+	}
+	
+	public void resourceElaborationFinished() {
+		log.info("Resources elaboration finished");
+		stop();
 	}
 
 	public void stop() {
+		log.info("Closing application");
+		((ConfigurableApplicationContext)applicationContext).close();
 	}
 
 }

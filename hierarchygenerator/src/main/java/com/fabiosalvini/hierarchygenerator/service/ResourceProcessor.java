@@ -1,10 +1,8 @@
 package com.fabiosalvini.hierarchygenerator.service;
 
-import java.util.Collection;
-import java.util.HashSet;
+import java.io.IOException;
 import java.util.Iterator;
 import java.util.List;
-import java.util.Set;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -26,45 +24,63 @@ public class ResourceProcessor extends Thread {
 	private static final Logger log = LoggerFactory.getLogger(ResourceProcessor.class);
 	
 
+	private ProcessorsManager processorsManager;
 	private DatasetsManager datasetsManager;
 	private ResourceRepository resourceRepository;
 	private ResourceSameAsRepository resourceSameAsRepository;
 	private ResourceParentRepository resourceParentRepository;
 	
-	private Set<Resource> resources;
+	private int identifier;
 	private boolean skipSameAs;
 
-	public ResourceProcessor(DatasetsManager datasetsManager, ResourceRepository resourceRepository, ResourceSameAsRepository resourceSameAsRepository,ResourceParentRepository resourceParentRepository,
-			Collection<Resource> resources, boolean skipSameAs) {
+	public ResourceProcessor(
+			int identifier,
+			ProcessorsManager processorsManager, 
+			DatasetsManager datasetsManager, 
+			ResourceRepository resourceRepository, 
+			ResourceSameAsRepository resourceSameAsRepository,
+			ResourceParentRepository resourceParentRepository,
+			boolean skipSameAs) {
+		this.identifier = identifier;
+		this.processorsManager = processorsManager;
 		this.datasetsManager = datasetsManager;
 		this.resourceRepository = resourceRepository;
 		this.resourceSameAsRepository = resourceSameAsRepository;
 		this.resourceParentRepository = resourceParentRepository;
-		this.resources = new HashSet<Resource>();
-		for(Resource res: resources) {
-			this.resources.add(res);
-		}
 		this.skipSameAs = skipSameAs;
 	}
 	
 	@Override
 	public void run() {
 		Model model = ModelFactory.createDefaultModel();
-		for(Resource res: resources) {
-			model.read(res.getUrl());
-			
-			extractLabel(res, model);
-			
-			if(!skipSameAs) {
-				searchSameAs(res, model);
+		while (!Thread.currentThread().isInterrupted()) {
+            Resource res = processorsManager.getResourceToElaborate();
+			if(res != null) {
+				log.debug("[Thread {}] Processing resource {}", identifier, res.getUrl());
+				model.read(res.getUrl());
+				
+				extractLabel(res, model);
+				
+				if(!skipSameAs) {
+					searchSameAs(res, model);
+				}
+				
+				searchParents(res, model);
+				
+				res.setProcessed(true);
+				res = resourceRepository.save(res);
+			} else {
+				try {
+					processorsManager.notifyIdle();
+					log.debug("Thread {} is going to sleep", identifier);
+					Thread.sleep(1000);
+					processorsManager.notifyActive(); //TODO: is it correct?
+				} catch (InterruptedException e) {
+					Thread.currentThread().interrupt();
+				}
 			}
-			
-			searchParents(res, model);
-			
-			res.setProcessed(true);
-			res = resourceRepository.save(res);
-			
-		}
+        }
+		log.debug("Thread ended");
 	}
 	
 	private void extractLabel(Resource res, Model model) {
@@ -133,10 +149,13 @@ public class ResourceProcessor extends Thread {
 						parentRes = resourceRepository.save(parentRes);
 					}
 					log.debug("Saving childOf connection between {} and {}", res.getUrl(), parentRes.getUrl());
-					ResourceParent resConnection = new ResourceParent();
-					resConnection.setChildResource(res);
-					resConnection.setParentResource(parentRes);
-					resConnection = resourceParentRepository.save(resConnection);
+					ResourceParent resConnection = resourceParentRepository.getByResources(res.getId(), parentRes.getId());
+					if(resConnection == null) {
+						resConnection = new ResourceParent();
+						resConnection.setChildResource(res);
+						resConnection.setParentResource(parentRes);
+						resConnection = resourceParentRepository.save(resConnection);
+					}
 				}
 			}
 		}

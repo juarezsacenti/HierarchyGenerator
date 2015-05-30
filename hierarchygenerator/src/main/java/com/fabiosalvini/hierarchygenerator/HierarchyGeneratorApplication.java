@@ -75,10 +75,11 @@ public class HierarchyGeneratorApplication {
 	private static String getApplicationVersion() {
 
 		/**
-		 * Dato che il contesto non e' ancora stato caricato completamente, l'unico modo che si ha per
-		 * ottenere un valore dai file di property e' quello di andarselo a prendere alla "vecchia maniera"
+		 * Since the context has not been all loaded yet, the only way that we have
+		 * to retrieve a value from the property file is to retrieve it "in the old way".
 		 * 
-		 * Quando il contesto sarà caricato completamente, sarà possibile accedere alle property con l'annotazione @Value(...)
+		 * Once the context has been completely loaded, we will retrieve properties 
+		 * with the annotation @Value(...)
 		 */
 		
 		Properties prop = new Properties();

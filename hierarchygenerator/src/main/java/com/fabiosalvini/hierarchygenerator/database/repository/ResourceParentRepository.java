@@ -11,7 +11,7 @@ public interface ResourceParentRepository extends org.springframework.data.repos
 	public ResourceParent findById(Integer id);
 	
 	@Query(value = "SELECT * "
-			     + "FROM resources_sameas "
+			     + "FROM resources_parents "
 			     + "WHERE child_resource_id = :childResourceId AND parent_resource_id = :parentResourceId", nativeQuery = true)
 	public ResourceParent getByResources(@Param("childResourceId")Integer childResourceId, @Param("parentResourceId")Integer parentResourceId);
 	

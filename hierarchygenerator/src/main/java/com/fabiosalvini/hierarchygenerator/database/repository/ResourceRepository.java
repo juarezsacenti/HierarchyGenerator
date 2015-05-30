@@ -1,6 +1,6 @@
 package com.fabiosalvini.hierarchygenerator.database.repository;
 
-import java.util.Set;
+import java.util.List;
 
 import org.springframework.data.jpa.repository.Query;
 
@@ -13,7 +13,7 @@ public interface ResourceRepository extends org.springframework.data.repository.
 	public Resource findByUrl(String url);
 
 	@Query(value = "SELECT * FROM resources WHERE processed = false", nativeQuery = true)
-	public Set<Resource> getResourceToBeProcessed();
+	public List<Resource> getResourceToBeProcessed();
 	
 	public Resource save(Resource resource);
 }

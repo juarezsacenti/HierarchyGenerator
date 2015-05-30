@@ -1435,3 +1435,1152 @@ Caused by: java.lang.RuntimeException: Error loading datasets configuration file
 30-05 17:59:20.502 WARN  [ConfigurableApplicationContext] - !!!!!!!!!!!!! WARNING: DEVELOPMENT MODE !!!!!!!!!!!!!
 30-05 17:59:20.502 WARN  [ConfigurableApplicationContext] - !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 30-05 17:59:20.502 INFO  [ConfigurableApplicationContext] - Version: 0.0.1-SNAPSHOT
+30-05 22:44:51.236 INFO  [ConfigurableApplicationContext] - #####################################################
+30-05 22:44:51.251 INFO  [ConfigurableApplicationContext] - ##########       Hierarchy Generator      ###########
+30-05 22:44:51.252 INFO  [ConfigurableApplicationContext] - #####################################################
+30-05 22:44:51.372 INFO  [ClassPathXmlApplicationContext] - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3c87521: startup date [Sat May 30 22:44:51 CEST 2015]; root of context hierarchy
+30-05 22:44:51.403 INFO  [XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [spring/application-config.xml]
+30-05 22:44:51.744 INFO  [XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [spring/db/jpa-config.xml]
+30-05 22:44:51.785 INFO  [XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [spring/db/hierarchy-generator-db-config.xml]
+30-05 22:44:51.988 INFO  [PropertySourcesPlaceholderConfigurer] - Loading properties file from class path resource [environments/development.properties]
+30-05 22:44:51.989 INFO  [PropertySourcesPlaceholderConfigurer] - Loading properties file from class path resource [project.properties]
+30-05 22:44:51.989 INFO  [PropertySourcesPlaceholderConfigurer] - Loading properties file from class path resource [constants.properties]
+30-05 22:44:52.004 INFO  [AutowiredAnnotationBeanPostProcessor] - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+30-05 22:44:52.212 INFO  [DefaultPersistenceUnitManager] - Found explicit default unit with name 'persistenceUnitHierarchyGenerator' in persistence.xml - overriding local default unit settings ('packagesToScan'/'mappingResources')
+30-05 22:44:52.280 INFO  [LocalContainerEntityManagerFactoryBean] - Building JPA container EntityManagerFactory for persistence unit 'persistenceUnitHierarchyGenerator'
+30-05 22:44:53.749 DEBUG [ProcessorsManager] - Creating processors
+30-05 22:44:53.750 DEBUG [ProcessorsManager] - Starting processors
+30-05 22:44:53.752 WARN  [ConfigurableApplicationContext] - !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+30-05 22:44:53.753 WARN  [ConfigurableApplicationContext] - !!!!!!!!!!!!! WARNING: DEVELOPMENT MODE !!!!!!!!!!!!!
+30-05 22:44:53.753 WARN  [ConfigurableApplicationContext] - !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+30-05 22:44:53.753 INFO  [ConfigurableApplicationContext] - Version: 0.0.1-SNAPSHOT
+30-05 22:45:48.532 INFO  [ConfigurableApplicationContext] - #####################################################
+30-05 22:45:48.534 INFO  [ConfigurableApplicationContext] - ##########       Hierarchy Generator      ###########
+30-05 22:45:48.535 INFO  [ConfigurableApplicationContext] - #####################################################
+30-05 22:45:48.583 INFO  [ClassPathXmlApplicationContext] - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3c87521: startup date [Sat May 30 22:45:48 CEST 2015]; root of context hierarchy
+30-05 22:45:48.607 INFO  [XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [spring/application-config.xml]
+30-05 22:45:48.879 INFO  [XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [spring/db/jpa-config.xml]
+30-05 22:45:48.915 INFO  [XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [spring/db/hierarchy-generator-db-config.xml]
+30-05 22:45:49.054 INFO  [PropertySourcesPlaceholderConfigurer] - Loading properties file from class path resource [environments/development.properties]
+30-05 22:45:49.054 INFO  [PropertySourcesPlaceholderConfigurer] - Loading properties file from class path resource [project.properties]
+30-05 22:45:49.055 INFO  [PropertySourcesPlaceholderConfigurer] - Loading properties file from class path resource [constants.properties]
+30-05 22:45:49.068 INFO  [AutowiredAnnotationBeanPostProcessor] - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+30-05 22:45:49.237 INFO  [DefaultPersistenceUnitManager] - Found explicit default unit with name 'persistenceUnitHierarchyGenerator' in persistence.xml - overriding local default unit settings ('packagesToScan'/'mappingResources')
+30-05 22:45:49.274 INFO  [LocalContainerEntityManagerFactoryBean] - Building JPA container EntityManagerFactory for persistence unit 'persistenceUnitHierarchyGenerator'
+30-05 22:45:50.393 DEBUG [ProcessorsManager] - Creating processors
+30-05 22:45:50.394 DEBUG [ProcessorsManager] - Starting processors
+30-05 22:45:50.397 WARN  [ConfigurableApplicationContext] - !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+30-05 22:45:50.397 WARN  [ConfigurableApplicationContext] - !!!!!!!!!!!!! WARNING: DEVELOPMENT MODE !!!!!!!!!!!!!
+30-05 22:45:50.397 WARN  [ConfigurableApplicationContext] - !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+30-05 22:45:50.397 INFO  [ConfigurableApplicationContext] - Version: 0.0.1-SNAPSHOT
+30-05 22:46:09.813 INFO  [ConfigurableApplicationContext] - #####################################################
+30-05 22:46:09.815 INFO  [ConfigurableApplicationContext] - ##########       Hierarchy Generator      ###########
+30-05 22:46:09.816 INFO  [ConfigurableApplicationContext] - #####################################################
+30-05 22:46:09.864 INFO  [ClassPathXmlApplicationContext] - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3c87521: startup date [Sat May 30 22:46:09 CEST 2015]; root of context hierarchy
+30-05 22:46:09.888 INFO  [XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [spring/application-config.xml]
+30-05 22:46:10.158 INFO  [XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [spring/db/jpa-config.xml]
+30-05 22:46:10.194 INFO  [XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [spring/db/hierarchy-generator-db-config.xml]
+30-05 22:46:10.335 INFO  [PropertySourcesPlaceholderConfigurer] - Loading properties file from class path resource [environments/development.properties]
+30-05 22:46:10.335 INFO  [PropertySourcesPlaceholderConfigurer] - Loading properties file from class path resource [project.properties]
+30-05 22:46:10.336 INFO  [PropertySourcesPlaceholderConfigurer] - Loading properties file from class path resource [constants.properties]
+30-05 22:46:10.349 INFO  [AutowiredAnnotationBeanPostProcessor] - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+30-05 22:46:10.516 INFO  [DefaultPersistenceUnitManager] - Found explicit default unit with name 'persistenceUnitHierarchyGenerator' in persistence.xml - overriding local default unit settings ('packagesToScan'/'mappingResources')
+30-05 22:46:10.553 INFO  [LocalContainerEntityManagerFactoryBean] - Building JPA container EntityManagerFactory for persistence unit 'persistenceUnitHierarchyGenerator'
+30-05 22:46:11.644 DEBUG [ProcessorsManager] - Creating processors
+30-05 22:46:11.646 DEBUG [ProcessorsManager] - Starting processors
+30-05 22:46:11.650 WARN  [ConfigurableApplicationContext] - !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+30-05 22:46:11.650 WARN  [ConfigurableApplicationContext] - !!!!!!!!!!!!! WARNING: DEVELOPMENT MODE !!!!!!!!!!!!!
+30-05 22:46:11.651 WARN  [ConfigurableApplicationContext] - !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+30-05 22:46:11.651 INFO  [ConfigurableApplicationContext] - Version: 0.0.1-SNAPSHOT
+30-05 22:46:12.005 INFO  [ProcessorsManager] - Resource processing finished
+30-05 22:46:12.005 DEBUG [ApplicationManager] - Resource elaboration finished
+30-05 22:47:22.082 INFO  [ConfigurableApplicationContext] - #####################################################
+30-05 22:47:22.084 INFO  [ConfigurableApplicationContext] - ##########       Hierarchy Generator      ###########
+30-05 22:47:22.084 INFO  [ConfigurableApplicationContext] - #####################################################
+30-05 22:47:22.133 INFO  [ClassPathXmlApplicationContext] - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3c87521: startup date [Sat May 30 22:47:22 CEST 2015]; root of context hierarchy
+30-05 22:47:22.160 INFO  [XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [spring/application-config.xml]
+30-05 22:47:22.434 INFO  [XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [spring/db/jpa-config.xml]
+30-05 22:47:22.470 INFO  [XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [spring/db/hierarchy-generator-db-config.xml]
+30-05 22:47:22.616 INFO  [PropertySourcesPlaceholderConfigurer] - Loading properties file from class path resource [environments/development.properties]
+30-05 22:47:22.617 INFO  [PropertySourcesPlaceholderConfigurer] - Loading properties file from class path resource [project.properties]
+30-05 22:47:22.617 INFO  [PropertySourcesPlaceholderConfigurer] - Loading properties file from class path resource [constants.properties]
+30-05 22:47:22.632 INFO  [AutowiredAnnotationBeanPostProcessor] - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+30-05 22:47:22.804 INFO  [DefaultPersistenceUnitManager] - Found explicit default unit with name 'persistenceUnitHierarchyGenerator' in persistence.xml - overriding local default unit settings ('packagesToScan'/'mappingResources')
+30-05 22:47:22.842 INFO  [LocalContainerEntityManagerFactoryBean] - Building JPA container EntityManagerFactory for persistence unit 'persistenceUnitHierarchyGenerator'
+30-05 22:47:24.065 DEBUG [ProcessorsManager] - Creating processors
+30-05 22:47:24.066 DEBUG [ProcessorsManager] - Starting processors
+30-05 22:47:24.069 WARN  [ConfigurableApplicationContext] - !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+30-05 22:47:24.069 WARN  [ConfigurableApplicationContext] - !!!!!!!!!!!!! WARNING: DEVELOPMENT MODE !!!!!!!!!!!!!
+30-05 22:47:24.069 WARN  [ConfigurableApplicationContext] - !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+30-05 22:47:24.070 INFO  [ConfigurableApplicationContext] - Version: 0.0.1-SNAPSHOT
+30-05 22:47:24.431 INFO  [ProcessorsManager] - Resource processing finished
+30-05 22:47:24.431 DEBUG [ApplicationManager] - Resource elaboration finished
+30-05 22:47:24.432 DEBUG [ApplicationManager] - Closing application
+30-05 22:47:24.432 INFO  [ClassPathXmlApplicationContext] - Closing org.springframework.context.support.ClassPathXmlApplicationContext@3c87521: startup date [Sat May 30 22:47:22 CEST 2015]; root of context hierarchy
+30-05 22:47:24.432 DEBUG [ApplicationManager] - Closing application
+30-05 22:47:24.435 INFO  [LocalContainerEntityManagerFactoryBean] - Closing JPA EntityManagerFactory for persistence unit 'persistenceUnitHierarchyGenerator'
+30-05 22:47:24.455 INFO  [DefaultPersistenceUnitManager] - Found explicit default unit with name 'persistenceUnitHierarchyGenerator' in persistence.xml - overriding local default unit settings ('packagesToScan'/'mappingResources')
+30-05 22:47:24.456 INFO  [LocalContainerEntityManagerFactoryBean] - Building JPA container EntityManagerFactory for persistence unit 'persistenceUnitHierarchyGenerator'
+30-05 22:48:08.180 INFO  [ConfigurableApplicationContext] - #####################################################
+30-05 22:48:08.182 INFO  [ConfigurableApplicationContext] - ##########       Hierarchy Generator      ###########
+30-05 22:48:08.182 INFO  [ConfigurableApplicationContext] - #####################################################
+30-05 22:48:08.230 INFO  [ClassPathXmlApplicationContext] - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3c87521: startup date [Sat May 30 22:48:08 CEST 2015]; root of context hierarchy
+30-05 22:48:08.254 INFO  [XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [spring/application-config.xml]
+30-05 22:48:08.521 INFO  [XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [spring/db/jpa-config.xml]
+30-05 22:48:08.559 INFO  [XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [spring/db/hierarchy-generator-db-config.xml]
+30-05 22:48:08.703 INFO  [PropertySourcesPlaceholderConfigurer] - Loading properties file from class path resource [environments/development.properties]
+30-05 22:48:08.703 INFO  [PropertySourcesPlaceholderConfigurer] - Loading properties file from class path resource [project.properties]
+30-05 22:48:08.704 INFO  [PropertySourcesPlaceholderConfigurer] - Loading properties file from class path resource [constants.properties]
+30-05 22:48:08.719 INFO  [AutowiredAnnotationBeanPostProcessor] - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+30-05 22:48:08.889 INFO  [DefaultPersistenceUnitManager] - Found explicit default unit with name 'persistenceUnitHierarchyGenerator' in persistence.xml - overriding local default unit settings ('packagesToScan'/'mappingResources')
+30-05 22:48:08.928 INFO  [LocalContainerEntityManagerFactoryBean] - Building JPA container EntityManagerFactory for persistence unit 'persistenceUnitHierarchyGenerator'
+30-05 22:48:10.043 DEBUG [ProcessorsManager] - Creating processors
+30-05 22:48:10.044 DEBUG [ProcessorsManager] - Starting processors
+30-05 22:48:10.047 WARN  [ConfigurableApplicationContext] - !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+30-05 22:48:10.047 WARN  [ConfigurableApplicationContext] - !!!!!!!!!!!!! WARNING: DEVELOPMENT MODE !!!!!!!!!!!!!
+30-05 22:48:10.047 WARN  [ConfigurableApplicationContext] - !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+30-05 22:48:10.047 INFO  [ConfigurableApplicationContext] - Version: 0.0.1-SNAPSHOT
+30-05 22:48:10.433 INFO  [ProcessorsManager] - Resource processing finished
+30-05 22:48:10.433 DEBUG [ApplicationManager] - Resource elaboration finished
+30-05 22:48:10.434 DEBUG [ApplicationManager] - Closing application
+30-05 22:50:40.076 INFO  [ConfigurableApplicationContext] - #####################################################
+30-05 22:50:40.078 INFO  [ConfigurableApplicationContext] - ##########       Hierarchy Generator      ###########
+30-05 22:50:40.078 INFO  [ConfigurableApplicationContext] - #####################################################
+30-05 22:50:40.127 INFO  [ClassPathXmlApplicationContext] - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3c87521: startup date [Sat May 30 22:50:40 CEST 2015]; root of context hierarchy
+30-05 22:50:40.152 INFO  [XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [spring/application-config.xml]
+30-05 22:50:40.423 INFO  [XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [spring/db/jpa-config.xml]
+30-05 22:50:40.463 INFO  [XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [spring/db/hierarchy-generator-db-config.xml]
+30-05 22:50:40.612 INFO  [PropertySourcesPlaceholderConfigurer] - Loading properties file from class path resource [environments/development.properties]
+30-05 22:50:40.613 INFO  [PropertySourcesPlaceholderConfigurer] - Loading properties file from class path resource [project.properties]
+30-05 22:50:40.613 INFO  [PropertySourcesPlaceholderConfigurer] - Loading properties file from class path resource [constants.properties]
+30-05 22:50:40.627 INFO  [AutowiredAnnotationBeanPostProcessor] - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+30-05 22:50:40.796 INFO  [DefaultPersistenceUnitManager] - Found explicit default unit with name 'persistenceUnitHierarchyGenerator' in persistence.xml - overriding local default unit settings ('packagesToScan'/'mappingResources')
+30-05 22:50:40.834 INFO  [LocalContainerEntityManagerFactoryBean] - Building JPA container EntityManagerFactory for persistence unit 'persistenceUnitHierarchyGenerator'
+30-05 22:50:41.919 DEBUG [ApplicationManager] - Elaborating resources
+30-05 22:50:41.920 DEBUG [ProcessorsManager] - Creating processors
+30-05 22:50:41.921 DEBUG [ProcessorsManager] - Starting processors
+30-05 22:50:41.923 WARN  [ConfigurableApplicationContext] - !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+30-05 22:50:41.923 WARN  [ConfigurableApplicationContext] - !!!!!!!!!!!!! WARNING: DEVELOPMENT MODE !!!!!!!!!!!!!
+30-05 22:50:41.923 WARN  [ConfigurableApplicationContext] - !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+30-05 22:50:41.924 INFO  [ConfigurableApplicationContext] - Version: 0.0.1-SNAPSHOT
+30-05 22:50:42.258 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 22:50:42.260 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 22:50:42.262 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 22:50:42.263 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 22:50:42.265 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 22:50:42.267 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 22:50:42.269 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 22:50:42.270 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 22:50:42.273 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 22:50:42.275 INFO  [ProcessorsManager] - Resource processing finished
+30-05 22:50:42.275 INFO  [ApplicationManager] - Resources elaboration finished
+30-05 22:50:42.275 INFO  [ApplicationManager] - Closing application
+30-05 22:50:42.276 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 22:50:42.278 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 22:50:42.280 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 22:50:42.281 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 22:50:42.283 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 22:50:42.285 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 22:50:42.288 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 22:50:42.290 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 22:50:42.291 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 22:50:42.292 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 22:50:42.294 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 22:50:43.282 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 22:50:43.285 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 22:50:43.286 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 22:50:43.289 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 22:50:43.291 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 22:50:43.293 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 22:50:43.295 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 22:50:43.297 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 22:50:43.300 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 22:50:43.303 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 22:50:44.286 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 22:50:44.289 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 22:50:44.291 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 22:50:44.294 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 22:50:44.296 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 22:50:44.299 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 22:50:44.300 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 22:50:44.302 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 22:50:44.304 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 22:50:44.306 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 22:50:45.292 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 22:50:45.294 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 22:50:45.296 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 22:50:45.298 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 22:50:45.300 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 22:50:45.302 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 22:50:45.303 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 22:50:45.305 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 22:50:45.307 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 22:50:45.309 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 22:50:46.296 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 22:50:46.299 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 22:50:46.302 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 22:50:46.304 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 22:50:46.307 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 22:50:46.309 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 22:50:46.311 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 22:50:46.313 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 22:50:46.315 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 22:50:46.318 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 22:51:22.101 INFO  [ConfigurableApplicationContext] - #####################################################
+30-05 22:51:22.103 INFO  [ConfigurableApplicationContext] - ##########       Hierarchy Generator      ###########
+30-05 22:51:22.103 INFO  [ConfigurableApplicationContext] - #####################################################
+30-05 22:51:22.152 INFO  [ClassPathXmlApplicationContext] - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3c87521: startup date [Sat May 30 22:51:22 CEST 2015]; root of context hierarchy
+30-05 22:51:22.177 INFO  [XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [spring/application-config.xml]
+30-05 22:51:22.458 INFO  [XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [spring/db/jpa-config.xml]
+30-05 22:51:22.501 INFO  [XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [spring/db/hierarchy-generator-db-config.xml]
+30-05 22:51:22.652 INFO  [PropertySourcesPlaceholderConfigurer] - Loading properties file from class path resource [environments/development.properties]
+30-05 22:51:22.652 INFO  [PropertySourcesPlaceholderConfigurer] - Loading properties file from class path resource [project.properties]
+30-05 22:51:22.652 INFO  [PropertySourcesPlaceholderConfigurer] - Loading properties file from class path resource [constants.properties]
+30-05 22:51:22.666 INFO  [AutowiredAnnotationBeanPostProcessor] - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+30-05 22:51:22.839 INFO  [DefaultPersistenceUnitManager] - Found explicit default unit with name 'persistenceUnitHierarchyGenerator' in persistence.xml - overriding local default unit settings ('packagesToScan'/'mappingResources')
+30-05 22:51:22.877 INFO  [LocalContainerEntityManagerFactoryBean] - Building JPA container EntityManagerFactory for persistence unit 'persistenceUnitHierarchyGenerator'
+30-05 22:51:24.097 DEBUG [ApplicationManager] - Elaborating resources
+30-05 22:51:24.098 DEBUG [ProcessorsManager] - Creating processors
+30-05 22:51:24.099 DEBUG [ProcessorsManager] - Starting processors
+30-05 22:51:24.101 WARN  [ConfigurableApplicationContext] - !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+30-05 22:51:24.101 WARN  [ConfigurableApplicationContext] - !!!!!!!!!!!!! WARNING: DEVELOPMENT MODE !!!!!!!!!!!!!
+30-05 22:51:24.101 WARN  [ConfigurableApplicationContext] - !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+30-05 22:51:24.101 INFO  [ConfigurableApplicationContext] - Version: 0.0.1-SNAPSHOT
+30-05 22:51:24.446 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 22:51:24.448 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 22:51:24.449 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 22:51:24.451 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 22:51:24.453 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 22:51:24.454 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 22:51:24.456 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 22:51:24.458 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 22:51:24.460 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 22:51:24.462 INFO  [ProcessorsManager] - Resource processing finished
+30-05 22:51:24.462 INFO  [ApplicationManager] - Resources elaboration finished
+30-05 22:51:24.462 DEBUG [ResourceProcessor] - Thread ended
+30-05 22:51:24.462 DEBUG [ResourceProcessor] - Thread ended
+30-05 22:51:24.462 DEBUG [ResourceProcessor] - Thread ended
+30-05 22:51:24.462 DEBUG [ResourceProcessor] - Thread ended
+30-05 22:51:24.462 DEBUG [ResourceProcessor] - Thread ended
+30-05 22:51:24.462 DEBUG [ResourceProcessor] - Thread ended
+30-05 22:51:24.462 DEBUG [ResourceProcessor] - Thread ended
+30-05 22:51:24.462 INFO  [ApplicationManager] - Closing application
+30-05 22:51:24.462 DEBUG [ResourceProcessor] - Thread ended
+30-05 22:51:24.462 DEBUG [ResourceProcessor] - Thread ended
+30-05 22:51:24.463 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 22:51:24.463 DEBUG [ResourceProcessor] - Thread ended
+30-05 22:51:43.650 INFO  [ConfigurableApplicationContext] - #####################################################
+30-05 22:51:43.652 INFO  [ConfigurableApplicationContext] - ##########       Hierarchy Generator      ###########
+30-05 22:51:43.652 INFO  [ConfigurableApplicationContext] - #####################################################
+30-05 22:51:43.701 INFO  [ClassPathXmlApplicationContext] - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3c87521: startup date [Sat May 30 22:51:43 CEST 2015]; root of context hierarchy
+30-05 22:51:43.726 INFO  [XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [spring/application-config.xml]
+30-05 22:51:44.003 INFO  [XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [spring/db/jpa-config.xml]
+30-05 22:51:44.042 INFO  [XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [spring/db/hierarchy-generator-db-config.xml]
+30-05 22:51:44.189 INFO  [PropertySourcesPlaceholderConfigurer] - Loading properties file from class path resource [environments/development.properties]
+30-05 22:51:44.190 INFO  [PropertySourcesPlaceholderConfigurer] - Loading properties file from class path resource [project.properties]
+30-05 22:51:44.190 INFO  [PropertySourcesPlaceholderConfigurer] - Loading properties file from class path resource [constants.properties]
+30-05 22:51:44.204 INFO  [AutowiredAnnotationBeanPostProcessor] - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+30-05 22:51:44.381 INFO  [DefaultPersistenceUnitManager] - Found explicit default unit with name 'persistenceUnitHierarchyGenerator' in persistence.xml - overriding local default unit settings ('packagesToScan'/'mappingResources')
+30-05 22:51:44.418 INFO  [LocalContainerEntityManagerFactoryBean] - Building JPA container EntityManagerFactory for persistence unit 'persistenceUnitHierarchyGenerator'
+30-05 22:51:45.521 DEBUG [ApplicationManager] - Elaborating resources
+30-05 22:51:45.521 DEBUG [ProcessorsManager] - Creating processors
+30-05 22:51:45.522 DEBUG [ProcessorsManager] - Starting processors
+30-05 22:51:45.524 WARN  [ConfigurableApplicationContext] - !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+30-05 22:51:45.525 WARN  [ConfigurableApplicationContext] - !!!!!!!!!!!!! WARNING: DEVELOPMENT MODE !!!!!!!!!!!!!
+30-05 22:51:45.525 WARN  [ConfigurableApplicationContext] - !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+30-05 22:51:45.525 INFO  [ConfigurableApplicationContext] - Version: 0.0.1-SNAPSHOT
+30-05 22:51:45.861 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 22:51:45.863 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 22:51:45.865 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 22:51:45.866 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 22:51:45.868 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 22:51:45.870 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 22:51:45.872 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 22:51:45.874 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 22:51:45.876 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 22:51:45.878 INFO  [ProcessorsManager] - Resource processing finished
+30-05 22:51:45.878 INFO  [ApplicationManager] - Resources elaboration finished
+30-05 22:51:45.878 DEBUG [ResourceProcessor] - Thread ended
+30-05 22:51:45.879 DEBUG [ResourceProcessor] - Thread ended
+30-05 22:51:45.878 DEBUG [ResourceProcessor] - Thread ended
+30-05 22:51:45.879 INFO  [ApplicationManager] - Closing application
+30-05 22:51:45.878 DEBUG [ResourceProcessor] - Thread ended
+30-05 22:51:45.878 DEBUG [ResourceProcessor] - Thread ended
+30-05 22:51:45.879 DEBUG [ResourceProcessor] - Thread ended
+30-05 22:51:45.879 DEBUG [ResourceProcessor] - Thread ended
+30-05 22:51:45.879 DEBUG [ResourceProcessor] - Thread ended
+30-05 22:51:45.879 DEBUG [ResourceProcessor] - Thread ended
+30-05 22:51:45.880 INFO  [ClassPathXmlApplicationContext] - Closing org.springframework.context.support.ClassPathXmlApplicationContext@3c87521: startup date [Sat May 30 22:51:43 CEST 2015]; root of context hierarchy
+30-05 22:51:45.880 INFO  [ApplicationManager] - Closing application
+30-05 22:51:45.884 INFO  [LocalContainerEntityManagerFactoryBean] - Closing JPA EntityManagerFactory for persistence unit 'persistenceUnitHierarchyGenerator'
+30-05 22:51:45.886 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 22:51:45.886 DEBUG [ResourceProcessor] - Thread ended
+30-05 22:54:13.836 INFO  [ConfigurableApplicationContext] - #####################################################
+30-05 22:54:13.838 INFO  [ConfigurableApplicationContext] - ##########       Hierarchy Generator      ###########
+30-05 22:54:13.839 INFO  [ConfigurableApplicationContext] - #####################################################
+30-05 22:54:13.886 INFO  [ClassPathXmlApplicationContext] - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3c87521: startup date [Sat May 30 22:54:13 CEST 2015]; root of context hierarchy
+30-05 22:54:13.911 INFO  [XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [spring/application-config.xml]
+30-05 22:54:14.178 INFO  [XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [spring/db/jpa-config.xml]
+30-05 22:54:14.214 INFO  [XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [spring/db/hierarchy-generator-db-config.xml]
+30-05 22:54:14.356 INFO  [PropertySourcesPlaceholderConfigurer] - Loading properties file from class path resource [environments/development.properties]
+30-05 22:54:14.357 INFO  [PropertySourcesPlaceholderConfigurer] - Loading properties file from class path resource [project.properties]
+30-05 22:54:14.357 INFO  [PropertySourcesPlaceholderConfigurer] - Loading properties file from class path resource [constants.properties]
+30-05 22:54:14.371 INFO  [AutowiredAnnotationBeanPostProcessor] - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+30-05 22:54:14.545 INFO  [DefaultPersistenceUnitManager] - Found explicit default unit with name 'persistenceUnitHierarchyGenerator' in persistence.xml - overriding local default unit settings ('packagesToScan'/'mappingResources')
+30-05 22:54:14.580 INFO  [LocalContainerEntityManagerFactoryBean] - Building JPA container EntityManagerFactory for persistence unit 'persistenceUnitHierarchyGenerator'
+30-05 22:54:15.668 DEBUG [ApplicationManager] - Elaborating resources
+30-05 22:54:15.668 DEBUG [ProcessorsManager] - Creating processors
+30-05 22:54:15.669 DEBUG [ProcessorsManager] - Starting processors
+30-05 22:54:15.673 WARN  [ConfigurableApplicationContext] - !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+30-05 22:54:15.673 WARN  [ConfigurableApplicationContext] - !!!!!!!!!!!!! WARNING: DEVELOPMENT MODE !!!!!!!!!!!!!
+30-05 22:54:15.673 WARN  [ConfigurableApplicationContext] - !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+30-05 22:54:15.673 INFO  [ConfigurableApplicationContext] - Version: 0.0.1-SNAPSHOT
+30-05 22:54:16.008 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 22:54:16.010 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 22:54:16.011 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 22:54:16.013 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 22:54:16.015 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 22:54:16.016 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 22:54:16.018 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 22:54:16.020 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 22:54:16.022 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 22:54:16.023 INFO  [ProcessorsManager] - Resource processing finished
+30-05 22:54:16.024 INFO  [ApplicationManager] - Resources elaboration finished
+30-05 22:54:16.024 DEBUG [ResourceProcessor] - Thread ended
+30-05 22:54:16.024 DEBUG [ResourceProcessor] - Thread ended
+30-05 22:54:16.024 DEBUG [ResourceProcessor] - Thread ended
+30-05 22:54:16.024 DEBUG [ResourceProcessor] - Thread ended
+30-05 22:54:16.024 DEBUG [ResourceProcessor] - Thread ended
+30-05 22:54:16.024 INFO  [ApplicationManager] - Closing application
+30-05 22:54:16.024 DEBUG [ResourceProcessor] - Thread ended
+30-05 22:54:16.024 DEBUG [ResourceProcessor] - Thread ended
+30-05 22:54:16.024 DEBUG [ResourceProcessor] - Thread ended
+30-05 22:54:16.025 INFO  [ClassPathXmlApplicationContext] - Closing org.springframework.context.support.ClassPathXmlApplicationContext@3c87521: startup date [Sat May 30 22:54:13 CEST 2015]; root of context hierarchy
+30-05 22:54:16.025 INFO  [ApplicationManager] - Closing application
+30-05 22:54:16.029 INFO  [LocalContainerEntityManagerFactoryBean] - Closing JPA EntityManagerFactory for persistence unit 'persistenceUnitHierarchyGenerator'
+30-05 22:54:16.030 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 22:54:16.031 DEBUG [ResourceProcessor] - Thread ended
+30-05 22:54:16.024 DEBUG [ResourceProcessor] - Thread ended
+30-05 22:54:55.341 INFO  [ConfigurableApplicationContext] - #####################################################
+30-05 22:54:55.344 INFO  [ConfigurableApplicationContext] - ##########       Hierarchy Generator      ###########
+30-05 22:54:55.344 INFO  [ConfigurableApplicationContext] - #####################################################
+30-05 22:54:55.393 INFO  [ClassPathXmlApplicationContext] - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3c87521: startup date [Sat May 30 22:54:55 CEST 2015]; root of context hierarchy
+30-05 22:54:55.419 INFO  [XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [spring/application-config.xml]
+30-05 22:54:55.709 INFO  [XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [spring/db/jpa-config.xml]
+30-05 22:54:55.749 INFO  [XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [spring/db/hierarchy-generator-db-config.xml]
+30-05 22:54:55.903 INFO  [PropertySourcesPlaceholderConfigurer] - Loading properties file from class path resource [environments/development.properties]
+30-05 22:54:55.904 INFO  [PropertySourcesPlaceholderConfigurer] - Loading properties file from class path resource [project.properties]
+30-05 22:54:55.904 INFO  [PropertySourcesPlaceholderConfigurer] - Loading properties file from class path resource [constants.properties]
+30-05 22:54:55.921 INFO  [AutowiredAnnotationBeanPostProcessor] - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+30-05 22:54:56.109 INFO  [DefaultPersistenceUnitManager] - Found explicit default unit with name 'persistenceUnitHierarchyGenerator' in persistence.xml - overriding local default unit settings ('packagesToScan'/'mappingResources')
+30-05 22:54:56.147 INFO  [LocalContainerEntityManagerFactoryBean] - Building JPA container EntityManagerFactory for persistence unit 'persistenceUnitHierarchyGenerator'
+30-05 22:54:57.263 DEBUG [ApplicationManager] - Elaborating resources
+30-05 22:54:57.264 DEBUG [ProcessorsManager] - Creating processors
+30-05 22:54:57.264 DEBUG [ProcessorsManager] - Starting processors
+30-05 22:54:57.268 WARN  [ConfigurableApplicationContext] - !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+30-05 22:54:57.269 WARN  [ConfigurableApplicationContext] - !!!!!!!!!!!!! WARNING: DEVELOPMENT MODE !!!!!!!!!!!!!
+30-05 22:54:57.269 WARN  [ConfigurableApplicationContext] - !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+30-05 22:54:57.270 INFO  [ConfigurableApplicationContext] - Version: 0.0.1-SNAPSHOT
+30-05 22:57:48.447 INFO  [ConfigurableApplicationContext] - #####################################################
+30-05 22:57:48.450 INFO  [ConfigurableApplicationContext] - ##########       Hierarchy Generator      ###########
+30-05 22:57:48.450 INFO  [ConfigurableApplicationContext] - #####################################################
+30-05 22:57:48.498 INFO  [ClassPathXmlApplicationContext] - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3c87521: startup date [Sat May 30 22:57:48 CEST 2015]; root of context hierarchy
+30-05 22:57:48.523 INFO  [XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [spring/application-config.xml]
+30-05 22:57:48.800 INFO  [XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [spring/db/jpa-config.xml]
+30-05 22:57:48.842 INFO  [XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [spring/db/hierarchy-generator-db-config.xml]
+30-05 22:57:48.993 INFO  [PropertySourcesPlaceholderConfigurer] - Loading properties file from class path resource [environments/development.properties]
+30-05 22:57:48.994 INFO  [PropertySourcesPlaceholderConfigurer] - Loading properties file from class path resource [project.properties]
+30-05 22:57:48.994 INFO  [PropertySourcesPlaceholderConfigurer] - Loading properties file from class path resource [constants.properties]
+30-05 22:57:49.009 INFO  [AutowiredAnnotationBeanPostProcessor] - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+30-05 22:57:49.182 INFO  [DefaultPersistenceUnitManager] - Found explicit default unit with name 'persistenceUnitHierarchyGenerator' in persistence.xml - overriding local default unit settings ('packagesToScan'/'mappingResources')
+30-05 22:57:49.219 INFO  [LocalContainerEntityManagerFactoryBean] - Building JPA container EntityManagerFactory for persistence unit 'persistenceUnitHierarchyGenerator'
+30-05 22:57:50.364 DEBUG [ApplicationManager] - Elaborating resources
+30-05 22:57:50.364 DEBUG [ProcessorsManager] - Creating processors
+30-05 22:57:50.366 DEBUG [ProcessorsManager] - Starting processors
+30-05 22:57:50.369 WARN  [ConfigurableApplicationContext] - !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+30-05 22:57:50.369 WARN  [ConfigurableApplicationContext] - !!!!!!!!!!!!! WARNING: DEVELOPMENT MODE !!!!!!!!!!!!!
+30-05 22:57:50.369 WARN  [ConfigurableApplicationContext] - !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+30-05 22:57:50.369 INFO  [ConfigurableApplicationContext] - Version: 0.0.1-SNAPSHOT
+30-05 22:57:50.739 DEBUG [ResourceProcessor] - Processing resource http://gadm.geovocab.org/id/3/75085.rdf
+30-05 22:57:50.742 DEBUG [ResourceProcessor] - Processing resource http://gadm.geovocab.org/id/3/75085.rdf
+30-05 22:57:50.743 DEBUG [ResourceProcessor] - Processing resource http://gadm.geovocab.org/id/3/75085.rdf
+30-05 22:57:50.746 DEBUG [ResourceProcessor] - Processing resource http://gadm.geovocab.org/id/3/75085.rdf
+30-05 22:57:50.748 DEBUG [ResourceProcessor] - Processing resource http://gadm.geovocab.org/id/3/75085.rdf
+30-05 22:57:50.750 DEBUG [ResourceProcessor] - Processing resource http://gadm.geovocab.org/id/3/75085.rdf
+30-05 22:57:50.751 DEBUG [ResourceProcessor] - Processing resource http://gadm.geovocab.org/id/3/75085.rdf
+30-05 22:57:50.753 DEBUG [ResourceProcessor] - Processing resource http://gadm.geovocab.org/id/3/75085.rdf
+30-05 22:57:50.756 DEBUG [ResourceProcessor] - Processing resource http://gadm.geovocab.org/id/3/75085.rdf
+30-05 22:57:50.757 DEBUG [ResourceProcessor] - Processing resource http://gadm.geovocab.org/id/3/75085.rdf
+30-05 22:57:52.173 DEBUG [ResourceProcessor] - Extracting the label
+30-05 22:57:52.173 DEBUG [ResourceProcessor] - Extracting the label
+30-05 22:57:52.173 DEBUG [ResourceProcessor] - Extracting the label
+30-05 22:57:52.173 DEBUG [ResourceProcessor] - Extracting the label
+30-05 22:57:52.174 DEBUG [ResourceProcessor] - Extracting the label
+30-05 22:57:52.181 DEBUG [ResourceProcessor] - Searching same representation of the resource
+30-05 22:57:52.181 DEBUG [ResourceProcessor] - Searching same representation of the resource
+30-05 22:57:52.181 DEBUG [ResourceProcessor] - Searching same representation of the resource
+30-05 22:57:52.181 DEBUG [ResourceProcessor] - Searching same representation of the resource
+30-05 22:57:52.181 DEBUG [ResourceProcessor] - Searching same representation of the resource
+30-05 22:57:52.181 DEBUG [ResourceProcessor] - Searching parents of the resource
+30-05 22:57:52.181 DEBUG [ResourceProcessor] - Searching parents of the resource
+30-05 22:57:52.181 DEBUG [ResourceProcessor] - Searching parents of the resource
+30-05 22:57:52.181 DEBUG [ResourceProcessor] - Searching parents of the resource
+30-05 22:57:52.181 DEBUG [ResourceProcessor] - Searching parents of the resource
+30-05 22:57:52.305 DEBUG [ResourceProcessor] - Creating resource http://gadm.geovocab.org/id/1/2247
+30-05 22:57:52.305 DEBUG [ResourceProcessor] - Creating resource http://gadm.geovocab.org/id/1/2247
+30-05 22:57:52.305 DEBUG [ResourceProcessor] - Creating resource http://gadm.geovocab.org/id/1/2247
+30-05 22:57:52.306 DEBUG [ResourceProcessor] - Creating resource http://gadm.geovocab.org/id/1/2247
+30-05 22:57:52.306 DEBUG [ResourceProcessor] - Creating resource http://gadm.geovocab.org/id/1/2247
+30-05 22:57:52.367 DEBUG [ResourceProcessor] - Saving childOf connection between http://gadm.geovocab.org/id/3/75085.rdf and http://gadm.geovocab.org/id/1/2247
+30-05 22:57:52.385 DEBUG [ResourceProcessor] - Creating resource http://gadm.geovocab.org/id/2/26704
+30-05 22:57:52.391 DEBUG [ResourceProcessor] - Saving childOf connection between http://gadm.geovocab.org/id/3/75085.rdf and http://gadm.geovocab.org/id/2/26704
+30-05 22:57:52.462 DEBUG [ResourceProcessor] - Creating resource http://gadm.geovocab.org/id/0/177
+30-05 22:57:52.475 DEBUG [ResourceProcessor] - Saving childOf connection between http://gadm.geovocab.org/id/3/75085.rdf and http://gadm.geovocab.org/id/0/177
+30-05 22:57:52.504 DEBUG [ResourceProcessor] - Processing resource http://gadm.geovocab.org/id/1/2247
+30-05 22:57:52.596 DEBUG [ResourceProcessor] - Extracting the label
+30-05 22:57:52.596 DEBUG [ResourceProcessor] - Searching same representation of the resource
+30-05 22:57:52.596 DEBUG [ResourceProcessor] - Searching parents of the resource
+30-05 22:57:52.600 DEBUG [ResourceProcessor] - Saving childOf connection between http://gadm.geovocab.org/id/3/75085.rdf and http://gadm.geovocab.org/id/1/2247
+30-05 22:57:53.589 DEBUG [ResourceProcessor] - Extracting the label
+30-05 22:57:53.590 DEBUG [ResourceProcessor] - Searching same representation of the resource
+30-05 22:57:53.590 DEBUG [ResourceProcessor] - Searching parents of the resource
+30-05 22:57:53.596 DEBUG [ResourceProcessor] - Saving childOf connection between http://gadm.geovocab.org/id/3/75085.rdf and http://gadm.geovocab.org/id/1/2247
+30-05 22:57:53.733 DEBUG [ResourceProcessor] - Extracting the label
+30-05 22:57:53.733 DEBUG [ResourceProcessor] - Extracting the label
+30-05 22:57:53.733 DEBUG [ResourceProcessor] - Searching same representation of the resource
+30-05 22:57:53.733 DEBUG [ResourceProcessor] - Searching same representation of the resource
+30-05 22:57:53.733 DEBUG [ResourceProcessor] - Searching parents of the resource
+30-05 22:57:53.733 DEBUG [ResourceProcessor] - Searching parents of the resource
+30-05 22:57:53.737 DEBUG [ResourceProcessor] - Saving childOf connection between http://gadm.geovocab.org/id/3/75085.rdf and http://gadm.geovocab.org/id/1/2247
+30-05 22:57:53.737 DEBUG [ResourceProcessor] - Saving childOf connection between http://gadm.geovocab.org/id/3/75085.rdf and http://gadm.geovocab.org/id/1/2247
+30-05 22:57:54.624 DEBUG [ResourceProcessor] - Extracting the label
+30-05 22:57:54.625 DEBUG [ResourceProcessor] - Searching same representation of the resource
+30-05 22:57:54.625 DEBUG [ResourceProcessor] - Searching parents of the resource
+30-05 22:57:54.632 DEBUG [ResourceProcessor] - Saving childOf connection between http://gadm.geovocab.org/id/1/2247 and http://gadm.geovocab.org/id/2/26704
+30-05 22:57:54.638 DEBUG [ResourceProcessor] - Extracting the label
+30-05 22:57:54.639 DEBUG [ResourceProcessor] - Searching same representation of the resource
+30-05 22:57:54.639 DEBUG [ResourceProcessor] - Searching parents of the resource
+30-05 22:57:54.643 DEBUG [ResourceProcessor] - Saving childOf connection between http://gadm.geovocab.org/id/3/75085.rdf and http://gadm.geovocab.org/id/1/2247
+30-05 22:57:54.674 DEBUG [ResourceProcessor] - Saving childOf connection between http://gadm.geovocab.org/id/1/2247 and http://gadm.geovocab.org/id/0/177
+30-05 22:57:54.695 DEBUG [ResourceProcessor] - Processing resource http://gadm.geovocab.org/id/2/26704
+30-05 22:57:55.530 DEBUG [ResourceProcessor] - Extracting the label
+30-05 22:57:55.531 DEBUG [ResourceProcessor] - Searching same representation of the resource
+30-05 22:57:55.531 DEBUG [ResourceProcessor] - Searching parents of the resource
+30-05 22:57:55.533 DEBUG [ResourceProcessor] - Saving childOf connection between http://gadm.geovocab.org/id/2/26704 and http://gadm.geovocab.org/id/1/2247
+30-05 22:57:55.572 DEBUG [ResourceProcessor] - Saving childOf connection between http://gadm.geovocab.org/id/2/26704 and http://gadm.geovocab.org/id/0/177
+30-05 22:57:55.594 DEBUG [ResourceProcessor] - Processing resource http://gadm.geovocab.org/id/0/177
+30-05 22:57:56.805 DEBUG [ResourceProcessor] - Extracting the label
+30-05 22:57:56.805 DEBUG [ResourceProcessor] - Searching same representation of the resource
+30-05 22:57:56.805 DEBUG [ResourceProcessor] - Searching parents of the resource
+30-05 22:57:56.807 DEBUG [ResourceProcessor] - Saving childOf connection between http://gadm.geovocab.org/id/0/177 and http://gadm.geovocab.org/id/1/2247
+30-05 22:57:56.828 DEBUG [ResourceProcessor] - Saving childOf connection between http://gadm.geovocab.org/id/0/177 and http://gadm.geovocab.org/id/2/26704
+30-05 23:00:23.824 INFO  [ConfigurableApplicationContext] - #####################################################
+30-05 23:00:23.826 INFO  [ConfigurableApplicationContext] - ##########       Hierarchy Generator      ###########
+30-05 23:00:23.827 INFO  [ConfigurableApplicationContext] - #####################################################
+30-05 23:00:23.875 INFO  [ClassPathXmlApplicationContext] - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3c87521: startup date [Sat May 30 23:00:23 CEST 2015]; root of context hierarchy
+30-05 23:00:23.900 INFO  [XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [spring/application-config.xml]
+30-05 23:00:24.176 INFO  [XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [spring/db/jpa-config.xml]
+30-05 23:00:24.214 INFO  [XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [spring/db/hierarchy-generator-db-config.xml]
+30-05 23:00:24.360 INFO  [PropertySourcesPlaceholderConfigurer] - Loading properties file from class path resource [environments/development.properties]
+30-05 23:00:24.361 INFO  [PropertySourcesPlaceholderConfigurer] - Loading properties file from class path resource [project.properties]
+30-05 23:00:24.362 INFO  [PropertySourcesPlaceholderConfigurer] - Loading properties file from class path resource [constants.properties]
+30-05 23:00:24.377 INFO  [AutowiredAnnotationBeanPostProcessor] - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+30-05 23:00:24.551 INFO  [DefaultPersistenceUnitManager] - Found explicit default unit with name 'persistenceUnitHierarchyGenerator' in persistence.xml - overriding local default unit settings ('packagesToScan'/'mappingResources')
+30-05 23:00:24.589 INFO  [LocalContainerEntityManagerFactoryBean] - Building JPA container EntityManagerFactory for persistence unit 'persistenceUnitHierarchyGenerator'
+30-05 23:00:25.757 DEBUG [ApplicationManager] - Elaborating resources
+30-05 23:00:25.758 DEBUG [ProcessorsManager] - Creating processors
+30-05 23:00:25.758 DEBUG [ProcessorsManager] - Starting processors
+30-05 23:00:25.762 WARN  [ConfigurableApplicationContext] - !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+30-05 23:00:25.762 WARN  [ConfigurableApplicationContext] - !!!!!!!!!!!!! WARNING: DEVELOPMENT MODE !!!!!!!!!!!!!
+30-05 23:00:25.762 WARN  [ConfigurableApplicationContext] - !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+30-05 23:00:25.763 INFO  [ConfigurableApplicationContext] - Version: 0.0.1-SNAPSHOT
+30-05 23:00:26.134 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 23:00:26.136 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 23:00:26.139 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 23:00:26.141 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 23:00:26.143 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 23:00:26.144 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 23:00:26.146 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 23:00:26.148 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 23:00:26.150 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 23:00:26.151 INFO  [ProcessorsManager] - Resource processing finished
+30-05 23:00:26.152 INFO  [ApplicationManager] - Resources elaboration finished
+30-05 23:00:26.152 DEBUG [ResourceProcessor] - Thread ended
+30-05 23:00:26.152 DEBUG [ResourceProcessor] - Thread ended
+30-05 23:00:26.152 DEBUG [ResourceProcessor] - Thread ended
+30-05 23:00:26.152 DEBUG [ResourceProcessor] - Thread ended
+30-05 23:00:26.152 DEBUG [ResourceProcessor] - Thread ended
+30-05 23:00:26.152 DEBUG [ResourceProcessor] - Thread ended
+30-05 23:00:26.152 DEBUG [ResourceProcessor] - Thread ended
+30-05 23:00:26.152 DEBUG [ResourceProcessor] - Thread ended
+30-05 23:00:26.152 DEBUG [ResourceProcessor] - Thread ended
+30-05 23:00:26.152 INFO  [ApplicationManager] - Closing application
+30-05 23:00:26.153 INFO  [ClassPathXmlApplicationContext] - Closing org.springframework.context.support.ClassPathXmlApplicationContext@3c87521: startup date [Sat May 30 23:00:23 CEST 2015]; root of context hierarchy
+30-05 23:00:26.154 INFO  [ApplicationManager] - Closing application
+30-05 23:00:26.157 INFO  [LocalContainerEntityManagerFactoryBean] - Closing JPA EntityManagerFactory for persistence unit 'persistenceUnitHierarchyGenerator'
+30-05 23:00:26.159 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 23:00:26.159 DEBUG [ResourceProcessor] - Thread ended
+30-05 23:01:27.808 INFO  [ConfigurableApplicationContext] - #####################################################
+30-05 23:01:27.810 INFO  [ConfigurableApplicationContext] - ##########       Hierarchy Generator      ###########
+30-05 23:01:27.810 INFO  [ConfigurableApplicationContext] - #####################################################
+30-05 23:01:27.859 INFO  [ClassPathXmlApplicationContext] - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3c87521: startup date [Sat May 30 23:01:27 CEST 2015]; root of context hierarchy
+30-05 23:01:27.884 INFO  [XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [spring/application-config.xml]
+30-05 23:01:28.157 INFO  [XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [spring/db/jpa-config.xml]
+30-05 23:01:28.194 INFO  [XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [spring/db/hierarchy-generator-db-config.xml]
+30-05 23:01:28.340 INFO  [PropertySourcesPlaceholderConfigurer] - Loading properties file from class path resource [environments/development.properties]
+30-05 23:01:28.341 INFO  [PropertySourcesPlaceholderConfigurer] - Loading properties file from class path resource [project.properties]
+30-05 23:01:28.341 INFO  [PropertySourcesPlaceholderConfigurer] - Loading properties file from class path resource [constants.properties]
+30-05 23:01:28.356 INFO  [AutowiredAnnotationBeanPostProcessor] - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+30-05 23:01:28.521 INFO  [DefaultPersistenceUnitManager] - Found explicit default unit with name 'persistenceUnitHierarchyGenerator' in persistence.xml - overriding local default unit settings ('packagesToScan'/'mappingResources')
+30-05 23:01:28.559 INFO  [LocalContainerEntityManagerFactoryBean] - Building JPA container EntityManagerFactory for persistence unit 'persistenceUnitHierarchyGenerator'
+30-05 23:01:36.127 INFO  [ConfigurableApplicationContext] - #####################################################
+30-05 23:01:36.129 INFO  [ConfigurableApplicationContext] - ##########       Hierarchy Generator      ###########
+30-05 23:01:36.130 INFO  [ConfigurableApplicationContext] - #####################################################
+30-05 23:01:36.178 INFO  [ClassPathXmlApplicationContext] - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3c87521: startup date [Sat May 30 23:01:36 CEST 2015]; root of context hierarchy
+30-05 23:01:36.202 INFO  [XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [spring/application-config.xml]
+30-05 23:01:36.476 INFO  [XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [spring/db/jpa-config.xml]
+30-05 23:01:36.514 INFO  [XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [spring/db/hierarchy-generator-db-config.xml]
+30-05 23:01:36.657 INFO  [PropertySourcesPlaceholderConfigurer] - Loading properties file from class path resource [environments/development.properties]
+30-05 23:01:36.657 INFO  [PropertySourcesPlaceholderConfigurer] - Loading properties file from class path resource [project.properties]
+30-05 23:01:36.657 INFO  [PropertySourcesPlaceholderConfigurer] - Loading properties file from class path resource [constants.properties]
+30-05 23:01:36.671 INFO  [AutowiredAnnotationBeanPostProcessor] - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+30-05 23:01:36.838 INFO  [DefaultPersistenceUnitManager] - Found explicit default unit with name 'persistenceUnitHierarchyGenerator' in persistence.xml - overriding local default unit settings ('packagesToScan'/'mappingResources')
+30-05 23:01:36.874 INFO  [LocalContainerEntityManagerFactoryBean] - Building JPA container EntityManagerFactory for persistence unit 'persistenceUnitHierarchyGenerator'
+30-05 23:01:38.003 DEBUG [ApplicationManager] - Elaborating resources
+30-05 23:01:38.003 DEBUG [ProcessorsManager] - Creating processors
+30-05 23:01:38.004 DEBUG [ProcessorsManager] - Starting processors
+30-05 23:01:38.008 WARN  [ConfigurableApplicationContext] - !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+30-05 23:01:38.009 WARN  [ConfigurableApplicationContext] - !!!!!!!!!!!!! WARNING: DEVELOPMENT MODE !!!!!!!!!!!!!
+30-05 23:01:38.009 WARN  [ConfigurableApplicationContext] - !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+30-05 23:01:38.009 INFO  [ConfigurableApplicationContext] - Version: 0.0.1-SNAPSHOT
+30-05 23:01:38.350 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 23:01:38.352 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 23:01:38.354 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 23:01:38.356 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 23:01:38.357 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 23:01:38.359 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 23:01:38.361 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 23:01:38.363 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 23:01:38.365 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 23:01:38.367 INFO  [ProcessorsManager] - Resource processing finished
+30-05 23:01:38.367 INFO  [ApplicationManager] - Resources elaboration finished
+30-05 23:01:38.367 DEBUG [ResourceProcessor] - Thread ended
+30-05 23:01:38.367 DEBUG [ResourceProcessor] - Thread ended
+30-05 23:01:38.367 DEBUG [ResourceProcessor] - Thread ended
+30-05 23:01:38.367 DEBUG [ResourceProcessor] - Thread ended
+30-05 23:01:38.367 DEBUG [ResourceProcessor] - Thread ended
+30-05 23:01:38.367 DEBUG [ResourceProcessor] - Thread ended
+30-05 23:01:38.367 DEBUG [ResourceProcessor] - Thread ended
+30-05 23:01:38.367 INFO  [ApplicationManager] - Closing application
+30-05 23:01:38.367 DEBUG [ResourceProcessor] - Thread ended
+30-05 23:01:38.367 DEBUG [ResourceProcessor] - Thread ended
+30-05 23:01:38.368 INFO  [ClassPathXmlApplicationContext] - Closing org.springframework.context.support.ClassPathXmlApplicationContext@3c87521: startup date [Sat May 30 23:01:36 CEST 2015]; root of context hierarchy
+30-05 23:01:38.369 INFO  [ApplicationManager] - Closing application
+30-05 23:01:38.374 INFO  [LocalContainerEntityManagerFactoryBean] - Closing JPA EntityManagerFactory for persistence unit 'persistenceUnitHierarchyGenerator'
+30-05 23:01:38.378 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 23:01:38.379 DEBUG [ResourceProcessor] - Thread ended
+30-05 23:01:52.392 INFO  [ConfigurableApplicationContext] - #####################################################
+30-05 23:01:52.394 INFO  [ConfigurableApplicationContext] - ##########       Hierarchy Generator      ###########
+30-05 23:01:52.395 INFO  [ConfigurableApplicationContext] - #####################################################
+30-05 23:01:52.444 INFO  [ClassPathXmlApplicationContext] - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3c87521: startup date [Sat May 30 23:01:52 CEST 2015]; root of context hierarchy
+30-05 23:01:52.468 INFO  [XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [spring/application-config.xml]
+30-05 23:01:52.744 INFO  [XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [spring/db/jpa-config.xml]
+30-05 23:01:52.786 INFO  [XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [spring/db/hierarchy-generator-db-config.xml]
+30-05 23:01:52.937 INFO  [PropertySourcesPlaceholderConfigurer] - Loading properties file from class path resource [environments/development.properties]
+30-05 23:01:52.937 INFO  [PropertySourcesPlaceholderConfigurer] - Loading properties file from class path resource [project.properties]
+30-05 23:01:52.938 INFO  [PropertySourcesPlaceholderConfigurer] - Loading properties file from class path resource [constants.properties]
+30-05 23:01:52.952 INFO  [AutowiredAnnotationBeanPostProcessor] - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+30-05 23:01:53.124 INFO  [DefaultPersistenceUnitManager] - Found explicit default unit with name 'persistenceUnitHierarchyGenerator' in persistence.xml - overriding local default unit settings ('packagesToScan'/'mappingResources')
+30-05 23:01:53.161 INFO  [LocalContainerEntityManagerFactoryBean] - Building JPA container EntityManagerFactory for persistence unit 'persistenceUnitHierarchyGenerator'
+30-05 23:01:54.264 DEBUG [ApplicationManager] - Elaborating resources
+30-05 23:01:54.264 DEBUG [ProcessorsManager] - Creating processors
+30-05 23:01:54.266 DEBUG [ProcessorsManager] - Starting processors
+30-05 23:01:54.269 WARN  [ConfigurableApplicationContext] - !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+30-05 23:01:54.270 WARN  [ConfigurableApplicationContext] - !!!!!!!!!!!!! WARNING: DEVELOPMENT MODE !!!!!!!!!!!!!
+30-05 23:01:54.270 WARN  [ConfigurableApplicationContext] - !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+30-05 23:01:54.270 INFO  [ConfigurableApplicationContext] - Version: 0.0.1-SNAPSHOT
+30-05 23:01:54.619 DEBUG [ResourceProcessor] - 1, Processing resource http://gadm.geovocab.org/id/3/75085.rdf
+30-05 23:01:54.622 DEBUG [ResourceProcessor] - 2, Processing resource http://gadm.geovocab.org/id/3/75085.rdf
+30-05 23:01:54.625 DEBUG [ResourceProcessor] - 5, Processing resource http://gadm.geovocab.org/id/3/75085.rdf
+30-05 23:01:54.626 DEBUG [ResourceProcessor] - 0, Processing resource http://gadm.geovocab.org/id/3/75085.rdf
+30-05 23:01:54.628 DEBUG [ResourceProcessor] - 3, Processing resource http://gadm.geovocab.org/id/3/75085.rdf
+30-05 23:01:54.630 DEBUG [ResourceProcessor] - 6, Processing resource http://gadm.geovocab.org/id/3/75085.rdf
+30-05 23:01:54.632 DEBUG [ResourceProcessor] - 7, Processing resource http://gadm.geovocab.org/id/3/75085.rdf
+30-05 23:01:54.634 DEBUG [ResourceProcessor] - 4, Processing resource http://gadm.geovocab.org/id/3/75085.rdf
+30-05 23:01:54.636 DEBUG [ResourceProcessor] - 8, Processing resource http://gadm.geovocab.org/id/3/75085.rdf
+30-05 23:01:54.637 DEBUG [ResourceProcessor] - 9, Processing resource http://gadm.geovocab.org/id/3/75085.rdf
+30-05 23:01:56.167 DEBUG [ResourceProcessor] - Extracting the label
+30-05 23:01:56.167 DEBUG [ResourceProcessor] - Extracting the label
+30-05 23:01:56.167 DEBUG [ResourceProcessor] - Extracting the label
+30-05 23:01:56.168 DEBUG [ResourceProcessor] - Extracting the label
+30-05 23:01:56.168 DEBUG [ResourceProcessor] - Extracting the label
+30-05 23:01:56.169 DEBUG [ResourceProcessor] - Extracting the label
+30-05 23:01:56.171 DEBUG [ResourceProcessor] - Extracting the label
+30-05 23:01:56.171 DEBUG [ResourceProcessor] - Extracting the label
+30-05 23:01:56.174 DEBUG [ResourceProcessor] - Searching same representation of the resource
+30-05 23:01:56.174 DEBUG [ResourceProcessor] - Searching same representation of the resource
+30-05 23:01:56.174 DEBUG [ResourceProcessor] - Searching same representation of the resource
+30-05 23:01:56.174 DEBUG [ResourceProcessor] - Searching same representation of the resource
+30-05 23:01:56.174 DEBUG [ResourceProcessor] - Searching same representation of the resource
+30-05 23:01:56.174 DEBUG [ResourceProcessor] - Searching same representation of the resource
+30-05 23:01:56.174 DEBUG [ResourceProcessor] - Searching same representation of the resource
+30-05 23:01:56.174 DEBUG [ResourceProcessor] - Searching same representation of the resource
+30-05 23:01:56.174 DEBUG [ResourceProcessor] - Searching parents of the resource
+30-05 23:01:56.174 DEBUG [ResourceProcessor] - Searching parents of the resource
+30-05 23:01:56.174 DEBUG [ResourceProcessor] - Searching parents of the resource
+30-05 23:01:56.174 DEBUG [ResourceProcessor] - Searching parents of the resource
+30-05 23:01:56.175 DEBUG [ResourceProcessor] - Searching parents of the resource
+30-05 23:01:56.175 DEBUG [ResourceProcessor] - Searching parents of the resource
+30-05 23:01:56.175 DEBUG [ResourceProcessor] - Searching parents of the resource
+30-05 23:01:56.175 DEBUG [ResourceProcessor] - Searching parents of the resource
+30-05 23:01:56.261 DEBUG [ResourceProcessor] - Creating resource http://gadm.geovocab.org/id/1/2247
+30-05 23:01:56.261 DEBUG [ResourceProcessor] - Creating resource http://gadm.geovocab.org/id/1/2247
+30-05 23:01:56.261 DEBUG [ResourceProcessor] - Creating resource http://gadm.geovocab.org/id/1/2247
+30-05 23:01:56.262 DEBUG [ResourceProcessor] - Creating resource http://gadm.geovocab.org/id/1/2247
+30-05 23:01:56.262 DEBUG [ResourceProcessor] - Creating resource http://gadm.geovocab.org/id/1/2247
+30-05 23:01:56.262 DEBUG [ResourceProcessor] - Creating resource http://gadm.geovocab.org/id/1/2247
+30-05 23:01:56.263 DEBUG [ResourceProcessor] - Creating resource http://gadm.geovocab.org/id/1/2247
+30-05 23:01:56.263 DEBUG [ResourceProcessor] - Creating resource http://gadm.geovocab.org/id/1/2247
+30-05 23:01:56.281 DEBUG [ResourceProcessor] - Extracting the label
+30-05 23:01:56.281 DEBUG [ResourceProcessor] - Searching same representation of the resource
+30-05 23:01:56.281 DEBUG [ResourceProcessor] - Searching parents of the resource
+30-05 23:01:56.285 DEBUG [ResourceProcessor] - Creating resource http://gadm.geovocab.org/id/1/2247
+30-05 23:01:56.325 DEBUG [ResourceProcessor] - Saving childOf connection between http://gadm.geovocab.org/id/3/75085.rdf and http://gadm.geovocab.org/id/1/2247
+30-05 23:01:56.873 DEBUG [ResourceProcessor] - Extracting the label
+30-05 23:01:56.874 DEBUG [ResourceProcessor] - Searching same representation of the resource
+30-05 23:01:56.874 DEBUG [ResourceProcessor] - Searching parents of the resource
+30-05 23:01:56.878 DEBUG [ResourceProcessor] - Saving childOf connection between http://gadm.geovocab.org/id/3/75085.rdf and http://gadm.geovocab.org/id/1/2247
+30-05 23:06:54.366 INFO  [ConfigurableApplicationContext] - #####################################################
+30-05 23:06:54.368 INFO  [ConfigurableApplicationContext] - ##########       Hierarchy Generator      ###########
+30-05 23:06:54.368 INFO  [ConfigurableApplicationContext] - #####################################################
+30-05 23:06:54.422 INFO  [ClassPathXmlApplicationContext] - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3c87521: startup date [Sat May 30 23:06:54 CEST 2015]; root of context hierarchy
+30-05 23:06:54.447 INFO  [XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [spring/application-config.xml]
+30-05 23:06:54.722 INFO  [XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [spring/db/jpa-config.xml]
+30-05 23:06:54.758 INFO  [XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [spring/db/hierarchy-generator-db-config.xml]
+30-05 23:06:54.907 INFO  [PropertySourcesPlaceholderConfigurer] - Loading properties file from class path resource [environments/development.properties]
+30-05 23:06:54.908 INFO  [PropertySourcesPlaceholderConfigurer] - Loading properties file from class path resource [project.properties]
+30-05 23:06:54.908 INFO  [PropertySourcesPlaceholderConfigurer] - Loading properties file from class path resource [constants.properties]
+30-05 23:06:54.923 INFO  [AutowiredAnnotationBeanPostProcessor] - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+30-05 23:06:55.101 INFO  [DefaultPersistenceUnitManager] - Found explicit default unit with name 'persistenceUnitHierarchyGenerator' in persistence.xml - overriding local default unit settings ('packagesToScan'/'mappingResources')
+30-05 23:06:55.138 INFO  [LocalContainerEntityManagerFactoryBean] - Building JPA container EntityManagerFactory for persistence unit 'persistenceUnitHierarchyGenerator'
+30-05 23:06:56.240 DEBUG [ApplicationManager] - Elaborating resources
+30-05 23:06:56.241 DEBUG [ProcessorsManager] - Creating processors
+30-05 23:06:56.242 DEBUG [ProcessorsManager] - Starting processors
+30-05 23:06:56.244 WARN  [ConfigurableApplicationContext] - !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+30-05 23:06:56.245 WARN  [ConfigurableApplicationContext] - !!!!!!!!!!!!! WARNING: DEVELOPMENT MODE !!!!!!!!!!!!!
+30-05 23:06:56.245 WARN  [ConfigurableApplicationContext] - !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+30-05 23:06:56.245 INFO  [ConfigurableApplicationContext] - Version: 0.0.1-SNAPSHOT
+30-05 23:06:56.594 DEBUG [ResourceProcessor] - 8, Processing resource http://gadm.geovocab.org/id/3/75085.rdf
+30-05 23:06:56.597 DEBUG [ResourceProcessor] - 3, Processing resource http://gadm.geovocab.org/id/3/75085.rdf
+30-05 23:06:56.601 DEBUG [ResourceProcessor] - 7, Processing resource http://gadm.geovocab.org/id/3/75085.rdf
+30-05 23:06:56.603 DEBUG [ResourceProcessor] - 9, Processing resource http://gadm.geovocab.org/id/3/75085.rdf
+30-05 23:06:56.605 DEBUG [ResourceProcessor] - 2, Processing resource http://gadm.geovocab.org/id/3/75085.rdf
+30-05 23:06:56.608 DEBUG [ResourceProcessor] - 1, Processing resource http://gadm.geovocab.org/id/3/75085.rdf
+30-05 23:06:56.610 DEBUG [ResourceProcessor] - 5, Processing resource http://gadm.geovocab.org/id/3/75085.rdf
+30-05 23:06:56.614 DEBUG [ResourceProcessor] - 0, Processing resource http://gadm.geovocab.org/id/3/75085.rdf
+30-05 23:06:56.616 DEBUG [ResourceProcessor] - 6, Processing resource http://gadm.geovocab.org/id/3/75085.rdf
+30-05 23:06:56.619 DEBUG [ResourceProcessor] - 4, Processing resource http://gadm.geovocab.org/id/3/75085.rdf
+30-05 23:06:58.209 DEBUG [ResourceProcessor] - Extracting the label
+30-05 23:06:58.209 DEBUG [ResourceProcessor] - Extracting the label
+30-05 23:06:58.209 DEBUG [ResourceProcessor] - Extracting the label
+30-05 23:06:58.209 DEBUG [ResourceProcessor] - Extracting the label
+30-05 23:06:58.209 DEBUG [ResourceProcessor] - Extracting the label
+30-05 23:06:58.210 DEBUG [ResourceProcessor] - Extracting the label
+30-05 23:06:58.210 DEBUG [ResourceProcessor] - Extracting the label
+30-05 23:06:58.210 DEBUG [ResourceProcessor] - Extracting the label
+30-05 23:06:58.210 DEBUG [ResourceProcessor] - Extracting the label
+30-05 23:06:58.217 DEBUG [ResourceProcessor] - Searching same representation of the resource
+30-05 23:06:58.217 DEBUG [ResourceProcessor] - Searching same representation of the resource
+30-05 23:06:58.217 DEBUG [ResourceProcessor] - Searching same representation of the resource
+30-05 23:06:58.217 DEBUG [ResourceProcessor] - Searching same representation of the resource
+30-05 23:06:58.217 DEBUG [ResourceProcessor] - Searching same representation of the resource
+30-05 23:06:58.217 DEBUG [ResourceProcessor] - Searching same representation of the resource
+30-05 23:06:58.217 DEBUG [ResourceProcessor] - Searching same representation of the resource
+30-05 23:06:58.217 DEBUG [ResourceProcessor] - Searching same representation of the resource
+30-05 23:06:58.217 DEBUG [ResourceProcessor] - Searching same representation of the resource
+30-05 23:06:58.217 DEBUG [ResourceProcessor] - Searching parents of the resource
+30-05 23:06:58.217 DEBUG [ResourceProcessor] - Searching parents of the resource
+30-05 23:06:58.217 DEBUG [ResourceProcessor] - Searching parents of the resource
+30-05 23:06:58.217 DEBUG [ResourceProcessor] - Searching parents of the resource
+30-05 23:06:58.217 DEBUG [ResourceProcessor] - Searching parents of the resource
+30-05 23:06:58.217 DEBUG [ResourceProcessor] - Searching parents of the resource
+30-05 23:06:58.217 DEBUG [ResourceProcessor] - Searching parents of the resource
+30-05 23:06:58.217 DEBUG [ResourceProcessor] - Searching parents of the resource
+30-05 23:06:58.218 DEBUG [ResourceProcessor] - Searching parents of the resource
+30-05 23:06:58.299 DEBUG [ResourceProcessor] - Saving childOf connection between http://gadm.geovocab.org/id/3/75085.rdf and http://gadm.geovocab.org/id/1/2247
+30-05 23:06:58.300 DEBUG [ResourceProcessor] - Saving childOf connection between http://gadm.geovocab.org/id/3/75085.rdf and http://gadm.geovocab.org/id/1/2247
+30-05 23:06:58.300 DEBUG [ResourceProcessor] - Saving childOf connection between http://gadm.geovocab.org/id/3/75085.rdf and http://gadm.geovocab.org/id/1/2247
+30-05 23:06:58.301 DEBUG [ResourceProcessor] - Saving childOf connection between http://gadm.geovocab.org/id/3/75085.rdf and http://gadm.geovocab.org/id/1/2247
+30-05 23:06:58.301 DEBUG [ResourceProcessor] - Saving childOf connection between http://gadm.geovocab.org/id/3/75085.rdf and http://gadm.geovocab.org/id/1/2247
+30-05 23:06:58.302 DEBUG [ResourceProcessor] - Saving childOf connection between http://gadm.geovocab.org/id/3/75085.rdf and http://gadm.geovocab.org/id/1/2247
+30-05 23:06:58.303 DEBUG [ResourceProcessor] - Saving childOf connection between http://gadm.geovocab.org/id/3/75085.rdf and http://gadm.geovocab.org/id/1/2247
+30-05 23:06:58.304 DEBUG [ResourceProcessor] - Saving childOf connection between http://gadm.geovocab.org/id/3/75085.rdf and http://gadm.geovocab.org/id/1/2247
+30-05 23:06:58.305 DEBUG [ResourceProcessor] - Creating resource http://gadm.geovocab.org/id/2/26704
+30-05 23:06:58.306 DEBUG [ResourceProcessor] - Creating resource http://gadm.geovocab.org/id/2/26704
+30-05 23:06:58.306 DEBUG [ResourceProcessor] - Creating resource http://gadm.geovocab.org/id/2/26704
+30-05 23:06:58.306 DEBUG [ResourceProcessor] - Saving childOf connection between http://gadm.geovocab.org/id/3/75085.rdf and http://gadm.geovocab.org/id/1/2247
+30-05 23:06:58.307 DEBUG [ResourceProcessor] - Creating resource http://gadm.geovocab.org/id/2/26704
+30-05 23:06:58.309 DEBUG [ResourceProcessor] - Creating resource http://gadm.geovocab.org/id/2/26704
+30-05 23:06:58.309 DEBUG [ResourceProcessor] - Creating resource http://gadm.geovocab.org/id/2/26704
+30-05 23:06:58.310 DEBUG [ResourceProcessor] - Creating resource http://gadm.geovocab.org/id/2/26704
+30-05 23:06:58.311 DEBUG [ResourceProcessor] - Creating resource http://gadm.geovocab.org/id/2/26704
+30-05 23:06:58.312 DEBUG [ResourceProcessor] - Creating resource http://gadm.geovocab.org/id/2/26704
+30-05 23:06:58.315 DEBUG [ResourceProcessor] - Extracting the label
+30-05 23:06:58.315 DEBUG [ResourceProcessor] - Searching same representation of the resource
+30-05 23:06:58.315 DEBUG [ResourceProcessor] - Searching parents of the resource
+30-05 23:06:58.318 DEBUG [ResourceProcessor] - Saving childOf connection between http://gadm.geovocab.org/id/3/75085.rdf and http://gadm.geovocab.org/id/1/2247
+30-05 23:06:58.322 DEBUG [ResourceProcessor] - Creating resource http://gadm.geovocab.org/id/2/26704
+30-05 23:06:58.369 DEBUG [ResourceProcessor] - Saving childOf connection between http://gadm.geovocab.org/id/3/75085.rdf and http://gadm.geovocab.org/id/2/26704
+30-05 23:06:58.374 DEBUG [ResourceProcessor] - Creating resource http://gadm.geovocab.org/id/0/177
+30-05 23:06:58.392 DEBUG [ResourceProcessor] - Saving childOf connection between http://gadm.geovocab.org/id/3/75085.rdf and http://gadm.geovocab.org/id/0/177
+30-05 23:06:58.420 DEBUG [ResourceProcessor] - 2, Processing resource http://gadm.geovocab.org/id/1/2247
+30-05 23:06:58.843 DEBUG [ResourceProcessor] - Extracting the label
+30-05 23:06:58.844 DEBUG [ResourceProcessor] - Searching same representation of the resource
+30-05 23:06:58.844 DEBUG [ResourceProcessor] - Searching parents of the resource
+30-05 23:06:58.847 DEBUG [ResourceProcessor] - Saving childOf connection between http://gadm.geovocab.org/id/1/2247 and http://gadm.geovocab.org/id/2/26704
+30-05 23:06:58.850 DEBUG [ResourceProcessor] - Saving childOf connection between http://gadm.geovocab.org/id/1/2247 and http://gadm.geovocab.org/id/0/177
+30-05 23:06:58.861 DEBUG [ResourceProcessor] - 2, Processing resource http://gadm.geovocab.org/id/2/26704
+30-05 23:06:59.341 DEBUG [ResourceProcessor] - Extracting the label
+30-05 23:06:59.342 DEBUG [ResourceProcessor] - Searching same representation of the resource
+30-05 23:06:59.342 DEBUG [ResourceProcessor] - Searching parents of the resource
+30-05 23:06:59.344 DEBUG [ResourceProcessor] - Saving childOf connection between http://gadm.geovocab.org/id/2/26704 and http://gadm.geovocab.org/id/1/2247
+30-05 23:06:59.347 DEBUG [ResourceProcessor] - Saving childOf connection between http://gadm.geovocab.org/id/2/26704 and http://gadm.geovocab.org/id/0/177
+30-05 23:06:59.361 DEBUG [ResourceProcessor] - 2, Processing resource http://gadm.geovocab.org/id/0/177
+30-05 23:07:09.751 INFO  [ConfigurableApplicationContext] - #####################################################
+30-05 23:07:09.754 INFO  [ConfigurableApplicationContext] - ##########       Hierarchy Generator      ###########
+30-05 23:07:09.754 INFO  [ConfigurableApplicationContext] - #####################################################
+30-05 23:07:09.804 INFO  [ClassPathXmlApplicationContext] - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3c87521: startup date [Sat May 30 23:07:09 CEST 2015]; root of context hierarchy
+30-05 23:07:09.830 INFO  [XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [spring/application-config.xml]
+30-05 23:07:10.119 INFO  [XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [spring/db/jpa-config.xml]
+30-05 23:07:10.156 INFO  [XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [spring/db/hierarchy-generator-db-config.xml]
+30-05 23:07:10.303 INFO  [PropertySourcesPlaceholderConfigurer] - Loading properties file from class path resource [environments/development.properties]
+30-05 23:07:10.304 INFO  [PropertySourcesPlaceholderConfigurer] - Loading properties file from class path resource [project.properties]
+30-05 23:07:10.304 INFO  [PropertySourcesPlaceholderConfigurer] - Loading properties file from class path resource [constants.properties]
+30-05 23:07:10.319 INFO  [AutowiredAnnotationBeanPostProcessor] - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+30-05 23:07:10.490 INFO  [DefaultPersistenceUnitManager] - Found explicit default unit with name 'persistenceUnitHierarchyGenerator' in persistence.xml - overriding local default unit settings ('packagesToScan'/'mappingResources')
+30-05 23:07:10.527 INFO  [LocalContainerEntityManagerFactoryBean] - Building JPA container EntityManagerFactory for persistence unit 'persistenceUnitHierarchyGenerator'
+30-05 23:07:11.634 DEBUG [ApplicationManager] - Elaborating resources
+30-05 23:07:11.635 DEBUG [ProcessorsManager] - Creating processors
+30-05 23:07:11.636 DEBUG [ProcessorsManager] - Starting processors
+30-05 23:07:11.638 WARN  [ConfigurableApplicationContext] - !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+30-05 23:07:11.639 WARN  [ConfigurableApplicationContext] - !!!!!!!!!!!!! WARNING: DEVELOPMENT MODE !!!!!!!!!!!!!
+30-05 23:07:11.639 WARN  [ConfigurableApplicationContext] - !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+30-05 23:07:11.639 INFO  [ConfigurableApplicationContext] - Version: 0.0.1-SNAPSHOT
+30-05 23:07:11.980 DEBUG [ResourceProcessor] - 6, Processing resource http://gadm.geovocab.org/id/3/75085.rdf
+30-05 23:07:11.983 DEBUG [ResourceProcessor] - 5, Processing resource http://gadm.geovocab.org/id/3/75085.rdf
+30-05 23:07:11.986 DEBUG [ResourceProcessor] - 9, Processing resource http://gadm.geovocab.org/id/3/75085.rdf
+30-05 23:07:11.988 DEBUG [ResourceProcessor] - 7, Processing resource http://gadm.geovocab.org/id/3/75085.rdf
+30-05 23:07:11.989 DEBUG [ResourceProcessor] - 8, Processing resource http://gadm.geovocab.org/id/3/75085.rdf
+30-05 23:07:11.991 DEBUG [ResourceProcessor] - 0, Processing resource http://gadm.geovocab.org/id/3/75085.rdf
+30-05 23:07:11.993 DEBUG [ResourceProcessor] - 4, Processing resource http://gadm.geovocab.org/id/3/75085.rdf
+30-05 23:07:11.995 DEBUG [ResourceProcessor] - 3, Processing resource http://gadm.geovocab.org/id/3/75085.rdf
+30-05 23:07:11.997 DEBUG [ResourceProcessor] - 2, Processing resource http://gadm.geovocab.org/id/3/75085.rdf
+30-05 23:07:11.999 DEBUG [ResourceProcessor] - 1, Processing resource http://gadm.geovocab.org/id/3/75085.rdf
+30-05 23:07:13.830 DEBUG [ResourceProcessor] - Extracting the label
+30-05 23:07:13.830 DEBUG [ResourceProcessor] - Extracting the label
+30-05 23:07:13.831 DEBUG [ResourceProcessor] - Extracting the label
+30-05 23:07:13.831 DEBUG [ResourceProcessor] - Extracting the label
+30-05 23:07:13.832 DEBUG [ResourceProcessor] - Extracting the label
+30-05 23:07:13.832 DEBUG [ResourceProcessor] - Extracting the label
+30-05 23:07:13.832 DEBUG [ResourceProcessor] - Extracting the label
+30-05 23:07:13.832 DEBUG [ResourceProcessor] - Extracting the label
+30-05 23:07:13.833 DEBUG [ResourceProcessor] - Extracting the label
+30-05 23:07:13.834 DEBUG [ResourceProcessor] - Extracting the label
+30-05 23:07:13.838 DEBUG [ResourceProcessor] - Searching same representation of the resource
+30-05 23:07:13.838 DEBUG [ResourceProcessor] - Searching same representation of the resource
+30-05 23:07:13.838 DEBUG [ResourceProcessor] - Searching same representation of the resource
+30-05 23:07:13.838 DEBUG [ResourceProcessor] - Searching same representation of the resource
+30-05 23:07:13.838 DEBUG [ResourceProcessor] - Searching same representation of the resource
+30-05 23:07:13.838 DEBUG [ResourceProcessor] - Searching same representation of the resource
+30-05 23:07:13.838 DEBUG [ResourceProcessor] - Searching same representation of the resource
+30-05 23:07:13.838 DEBUG [ResourceProcessor] - Searching same representation of the resource
+30-05 23:07:13.838 DEBUG [ResourceProcessor] - Searching parents of the resource
+30-05 23:07:13.838 DEBUG [ResourceProcessor] - Searching parents of the resource
+30-05 23:07:13.838 DEBUG [ResourceProcessor] - Searching same representation of the resource
+30-05 23:07:13.838 DEBUG [ResourceProcessor] - Searching same representation of the resource
+30-05 23:07:13.838 DEBUG [ResourceProcessor] - Searching parents of the resource
+30-05 23:07:13.838 DEBUG [ResourceProcessor] - Searching parents of the resource
+30-05 23:07:13.838 DEBUG [ResourceProcessor] - Searching parents of the resource
+30-05 23:07:13.838 DEBUG [ResourceProcessor] - Searching parents of the resource
+30-05 23:07:13.838 DEBUG [ResourceProcessor] - Searching parents of the resource
+30-05 23:07:13.839 DEBUG [ResourceProcessor] - Searching parents of the resource
+30-05 23:07:13.839 DEBUG [ResourceProcessor] - Searching parents of the resource
+30-05 23:07:13.838 DEBUG [ResourceProcessor] - Searching parents of the resource
+30-05 23:07:13.929 DEBUG [ResourceProcessor] - Creating resource http://gadm.geovocab.org/id/1/2247
+30-05 23:07:13.929 DEBUG [ResourceProcessor] - Creating resource http://gadm.geovocab.org/id/1/2247
+30-05 23:07:13.930 DEBUG [ResourceProcessor] - Creating resource http://gadm.geovocab.org/id/1/2247
+30-05 23:07:13.931 DEBUG [ResourceProcessor] - Creating resource http://gadm.geovocab.org/id/1/2247
+30-05 23:07:13.932 DEBUG [ResourceProcessor] - Creating resource http://gadm.geovocab.org/id/1/2247
+30-05 23:07:13.932 DEBUG [ResourceProcessor] - Creating resource http://gadm.geovocab.org/id/1/2247
+30-05 23:07:13.934 DEBUG [ResourceProcessor] - Creating resource http://gadm.geovocab.org/id/1/2247
+30-05 23:07:13.934 DEBUG [ResourceProcessor] - Creating resource http://gadm.geovocab.org/id/1/2247
+30-05 23:07:13.939 DEBUG [ResourceProcessor] - Creating resource http://gadm.geovocab.org/id/1/2247
+30-05 23:07:13.941 DEBUG [ResourceProcessor] - Creating resource http://gadm.geovocab.org/id/1/2247
+30-05 23:07:13.997 DEBUG [ResourceProcessor] - Saving childOf connection between http://gadm.geovocab.org/id/3/75085.rdf and http://gadm.geovocab.org/id/1/2247
+30-05 23:07:14.017 DEBUG [ResourceProcessor] - Creating resource http://gadm.geovocab.org/id/2/26704
+30-05 23:07:14.038 DEBUG [ResourceProcessor] - Saving childOf connection between http://gadm.geovocab.org/id/3/75085.rdf and http://gadm.geovocab.org/id/2/26704
+30-05 23:07:14.057 DEBUG [ResourceProcessor] - Creating resource http://gadm.geovocab.org/id/0/177
+30-05 23:07:14.071 DEBUG [ResourceProcessor] - Saving childOf connection between http://gadm.geovocab.org/id/3/75085.rdf and http://gadm.geovocab.org/id/0/177
+30-05 23:07:14.098 DEBUG [ResourceProcessor] - 2, Processing resource http://gadm.geovocab.org/id/1/2247
+30-05 23:07:14.515 DEBUG [ResourceProcessor] - Extracting the label
+30-05 23:07:14.516 DEBUG [ResourceProcessor] - Searching same representation of the resource
+30-05 23:07:14.516 DEBUG [ResourceProcessor] - Searching parents of the resource
+30-05 23:07:14.520 DEBUG [ResourceProcessor] - Saving childOf connection between http://gadm.geovocab.org/id/1/2247 and http://gadm.geovocab.org/id/2/26704
+30-05 23:07:14.524 DEBUG [ResourceProcessor] - Saving childOf connection between http://gadm.geovocab.org/id/1/2247 and http://gadm.geovocab.org/id/0/177
+30-05 23:07:14.574 DEBUG [ResourceProcessor] - 2, Processing resource http://gadm.geovocab.org/id/2/26704
+30-05 23:07:14.944 DEBUG [ResourceProcessor] - Extracting the label
+30-05 23:07:14.944 DEBUG [ResourceProcessor] - Searching same representation of the resource
+30-05 23:07:14.944 DEBUG [ResourceProcessor] - Searching parents of the resource
+30-05 23:07:14.947 DEBUG [ResourceProcessor] - Saving childOf connection between http://gadm.geovocab.org/id/2/26704 and http://gadm.geovocab.org/id/1/2247
+30-05 23:07:14.950 DEBUG [ResourceProcessor] - Saving childOf connection between http://gadm.geovocab.org/id/2/26704 and http://gadm.geovocab.org/id/0/177
+30-05 23:07:15.051 DEBUG [ResourceProcessor] - 2, Processing resource http://gadm.geovocab.org/id/0/177
+30-05 23:08:11.225 INFO  [ConfigurableApplicationContext] - #####################################################
+30-05 23:08:11.227 INFO  [ConfigurableApplicationContext] - ##########       Hierarchy Generator      ###########
+30-05 23:08:11.228 INFO  [ConfigurableApplicationContext] - #####################################################
+30-05 23:08:11.278 INFO  [ClassPathXmlApplicationContext] - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3c87521: startup date [Sat May 30 23:08:11 CEST 2015]; root of context hierarchy
+30-05 23:08:11.302 INFO  [XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [spring/application-config.xml]
+30-05 23:08:11.578 INFO  [XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [spring/db/jpa-config.xml]
+30-05 23:08:11.622 INFO  [XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [spring/db/hierarchy-generator-db-config.xml]
+30-05 23:08:11.768 INFO  [PropertySourcesPlaceholderConfigurer] - Loading properties file from class path resource [environments/development.properties]
+30-05 23:08:11.769 INFO  [PropertySourcesPlaceholderConfigurer] - Loading properties file from class path resource [project.properties]
+30-05 23:08:11.769 INFO  [PropertySourcesPlaceholderConfigurer] - Loading properties file from class path resource [constants.properties]
+30-05 23:08:11.783 INFO  [AutowiredAnnotationBeanPostProcessor] - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+30-05 23:08:11.950 INFO  [DefaultPersistenceUnitManager] - Found explicit default unit with name 'persistenceUnitHierarchyGenerator' in persistence.xml - overriding local default unit settings ('packagesToScan'/'mappingResources')
+30-05 23:08:11.989 INFO  [LocalContainerEntityManagerFactoryBean] - Building JPA container EntityManagerFactory for persistence unit 'persistenceUnitHierarchyGenerator'
+30-05 23:08:13.095 DEBUG [ApplicationManager] - Elaborating resources
+30-05 23:08:13.095 DEBUG [ProcessorsManager] - Creating processors
+30-05 23:08:13.097 DEBUG [ProcessorsManager] - Starting processors
+30-05 23:08:13.100 WARN  [ConfigurableApplicationContext] - !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+30-05 23:08:13.100 WARN  [ConfigurableApplicationContext] - !!!!!!!!!!!!! WARNING: DEVELOPMENT MODE !!!!!!!!!!!!!
+30-05 23:08:13.100 WARN  [ConfigurableApplicationContext] - !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+30-05 23:08:13.101 INFO  [ConfigurableApplicationContext] - Version: 0.0.1-SNAPSHOT
+30-05 23:08:13.481 DEBUG [ResourceProcessor] - 1, Processing resource http://gadm.geovocab.org/id/0/177
+30-05 23:08:13.484 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 23:08:13.487 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 23:08:13.489 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 23:08:13.491 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 23:08:13.493 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 23:08:13.494 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 23:08:13.496 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 23:08:13.498 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 23:08:13.500 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 23:08:14.489 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 23:08:14.493 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 23:08:14.496 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 23:08:14.500 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 23:08:14.504 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 23:08:14.509 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 23:08:14.512 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 23:08:14.515 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 23:08:14.517 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 23:08:15.229 DEBUG [ResourceProcessor] - Extracting the label
+30-05 23:08:15.235 DEBUG [ResourceProcessor] - Searching same representation of the resource
+30-05 23:08:15.236 DEBUG [ResourceProcessor] - Searching parents of the resource
+30-05 23:08:15.277 INFO  [ProcessorsManager] - Resource processing finished
+30-05 23:08:15.277 INFO  [ApplicationManager] - Resources elaboration finished
+30-05 23:08:15.277 DEBUG [ResourceProcessor] - Thread ended
+30-05 23:08:15.277 DEBUG [ResourceProcessor] - Thread ended
+30-05 23:08:15.277 DEBUG [ResourceProcessor] - Thread ended
+30-05 23:08:15.277 DEBUG [ResourceProcessor] - Thread ended
+30-05 23:08:15.277 INFO  [ApplicationManager] - Closing application
+30-05 23:08:15.277 DEBUG [ResourceProcessor] - Thread ended
+30-05 23:08:15.277 DEBUG [ResourceProcessor] - Thread ended
+30-05 23:08:15.277 DEBUG [ResourceProcessor] - Thread ended
+30-05 23:08:15.277 DEBUG [ResourceProcessor] - Thread ended
+30-05 23:08:15.277 DEBUG [ResourceProcessor] - Thread ended
+30-05 23:08:15.278 INFO  [ClassPathXmlApplicationContext] - Closing org.springframework.context.support.ClassPathXmlApplicationContext@3c87521: startup date [Sat May 30 23:08:11 CEST 2015]; root of context hierarchy
+30-05 23:08:15.279 INFO  [ApplicationManager] - Closing application
+30-05 23:08:15.282 INFO  [LocalContainerEntityManagerFactoryBean] - Closing JPA EntityManagerFactory for persistence unit 'persistenceUnitHierarchyGenerator'
+30-05 23:08:15.283 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 23:08:15.284 DEBUG [ResourceProcessor] - Thread ended
+30-05 23:09:34.013 INFO  [ConfigurableApplicationContext] - #####################################################
+30-05 23:09:34.015 INFO  [ConfigurableApplicationContext] - ##########       Hierarchy Generator      ###########
+30-05 23:09:34.015 INFO  [ConfigurableApplicationContext] - #####################################################
+30-05 23:09:34.064 INFO  [ClassPathXmlApplicationContext] - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3c87521: startup date [Sat May 30 23:09:34 CEST 2015]; root of context hierarchy
+30-05 23:09:34.089 INFO  [XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [spring/application-config.xml]
+30-05 23:09:34.368 INFO  [XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [spring/db/jpa-config.xml]
+30-05 23:09:34.411 INFO  [XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [spring/db/hierarchy-generator-db-config.xml]
+30-05 23:09:34.564 INFO  [PropertySourcesPlaceholderConfigurer] - Loading properties file from class path resource [environments/development.properties]
+30-05 23:09:34.565 INFO  [PropertySourcesPlaceholderConfigurer] - Loading properties file from class path resource [project.properties]
+30-05 23:09:34.565 INFO  [PropertySourcesPlaceholderConfigurer] - Loading properties file from class path resource [constants.properties]
+30-05 23:09:34.579 INFO  [AutowiredAnnotationBeanPostProcessor] - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+30-05 23:09:34.743 INFO  [DefaultPersistenceUnitManager] - Found explicit default unit with name 'persistenceUnitHierarchyGenerator' in persistence.xml - overriding local default unit settings ('packagesToScan'/'mappingResources')
+30-05 23:09:34.779 INFO  [LocalContainerEntityManagerFactoryBean] - Building JPA container EntityManagerFactory for persistence unit 'persistenceUnitHierarchyGenerator'
+30-05 23:09:35.873 DEBUG [ApplicationManager] - Elaborating resources
+30-05 23:09:35.874 DEBUG [ProcessorsManager] - Creating processors
+30-05 23:09:35.875 DEBUG [ProcessorsManager] - Starting processors
+30-05 23:09:35.877 WARN  [ConfigurableApplicationContext] - !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+30-05 23:09:35.877 WARN  [ConfigurableApplicationContext] - !!!!!!!!!!!!! WARNING: DEVELOPMENT MODE !!!!!!!!!!!!!
+30-05 23:09:35.877 WARN  [ConfigurableApplicationContext] - !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+30-05 23:09:35.877 INFO  [ConfigurableApplicationContext] - Version: 0.0.1-SNAPSHOT
+30-05 23:09:36.224 DEBUG [ResourceProcessor] - 7, Processing resource http://gadm.geovocab.org/id/3/75085.rdf
+30-05 23:09:36.227 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 23:09:36.231 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 23:09:36.233 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 23:09:36.235 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 23:09:36.237 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 23:09:36.239 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 23:09:36.241 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 23:09:36.243 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 23:09:36.245 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 23:09:37.122 DEBUG [ResourceProcessor] - Extracting the label
+30-05 23:09:37.129 DEBUG [ResourceProcessor] - Searching same representation of the resource
+30-05 23:09:37.129 DEBUG [ResourceProcessor] - Searching parents of the resource
+30-05 23:09:37.213 DEBUG [ResourceProcessor] - Creating resource http://gadm.geovocab.org/id/1/2247
+30-05 23:09:37.229 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 23:09:37.234 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 23:09:37.236 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 23:09:37.238 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 23:09:37.240 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 23:09:37.243 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 23:09:37.244 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 23:09:37.246 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 23:09:37.248 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 23:09:37.250 DEBUG [ResourceProcessor] - Saving childOf connection between http://gadm.geovocab.org/id/3/75085.rdf and http://gadm.geovocab.org/id/1/2247
+30-05 23:09:37.257 DEBUG [ResourceProcessor] - Creating resource http://gadm.geovocab.org/id/2/26704
+30-05 23:09:37.266 DEBUG [ResourceProcessor] - Saving childOf connection between http://gadm.geovocab.org/id/3/75085.rdf and http://gadm.geovocab.org/id/2/26704
+30-05 23:09:37.270 DEBUG [ResourceProcessor] - Creating resource http://gadm.geovocab.org/id/0/177
+30-05 23:09:37.283 DEBUG [ResourceProcessor] - Saving childOf connection between http://gadm.geovocab.org/id/3/75085.rdf and http://gadm.geovocab.org/id/0/177
+30-05 23:09:37.310 DEBUG [ResourceProcessor] - 7, Processing resource http://gadm.geovocab.org/id/1/2247
+30-05 23:09:37.683 DEBUG [ResourceProcessor] - Extracting the label
+30-05 23:09:37.683 DEBUG [ResourceProcessor] - Searching same representation of the resource
+30-05 23:09:37.683 DEBUG [ResourceProcessor] - Searching parents of the resource
+30-05 23:09:37.686 DEBUG [ResourceProcessor] - Saving childOf connection between http://gadm.geovocab.org/id/1/2247 and http://gadm.geovocab.org/id/2/26704
+30-05 23:09:37.690 DEBUG [ResourceProcessor] - Saving childOf connection between http://gadm.geovocab.org/id/1/2247 and http://gadm.geovocab.org/id/0/177
+30-05 23:09:37.711 DEBUG [ResourceProcessor] - 7, Processing resource http://gadm.geovocab.org/id/2/26704
+30-05 23:09:38.072 DEBUG [ResourceProcessor] - Extracting the label
+30-05 23:09:38.072 DEBUG [ResourceProcessor] - Searching same representation of the resource
+30-05 23:09:38.073 DEBUG [ResourceProcessor] - Searching parents of the resource
+30-05 23:09:38.076 DEBUG [ResourceProcessor] - Saving childOf connection between http://gadm.geovocab.org/id/2/26704 and http://gadm.geovocab.org/id/1/2247
+30-05 23:09:38.082 DEBUG [ResourceProcessor] - Saving childOf connection between http://gadm.geovocab.org/id/2/26704 and http://gadm.geovocab.org/id/0/177
+30-05 23:09:38.094 DEBUG [ResourceProcessor] - 7, Processing resource http://gadm.geovocab.org/id/0/177
+30-05 23:09:38.233 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 23:09:38.236 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 23:09:38.238 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 23:09:38.241 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 23:09:38.244 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 23:09:38.247 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 23:09:38.250 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 23:09:38.252 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 23:09:38.253 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 23:09:39.238 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 23:09:39.239 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 23:09:39.241 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 23:09:39.243 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 23:09:39.248 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 23:09:39.250 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 23:09:39.252 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 23:09:39.255 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 23:09:39.256 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 23:09:39.365 DEBUG [ResourceProcessor] - Extracting the label
+30-05 23:09:39.366 DEBUG [ResourceProcessor] - Searching same representation of the resource
+30-05 23:09:39.366 DEBUG [ResourceProcessor] - Searching parents of the resource
+30-05 23:09:39.368 DEBUG [ResourceProcessor] - Saving childOf connection between http://gadm.geovocab.org/id/0/177 and http://gadm.geovocab.org/id/1/2247
+30-05 23:09:39.371 DEBUG [ResourceProcessor] - Saving childOf connection between http://gadm.geovocab.org/id/0/177 and http://gadm.geovocab.org/id/2/26704
+30-05 23:09:39.412 INFO  [ProcessorsManager] - Resource processing finished
+30-05 23:09:39.412 INFO  [ApplicationManager] - Resources elaboration finished
+30-05 23:09:39.412 DEBUG [ResourceProcessor] - Thread ended
+30-05 23:09:39.412 DEBUG [ResourceProcessor] - Thread ended
+30-05 23:09:39.412 DEBUG [ResourceProcessor] - Thread ended
+30-05 23:09:39.412 DEBUG [ResourceProcessor] - Thread ended
+30-05 23:09:39.412 DEBUG [ResourceProcessor] - Thread ended
+30-05 23:09:39.413 DEBUG [ResourceProcessor] - Thread ended
+30-05 23:09:39.413 INFO  [ApplicationManager] - Closing application
+30-05 23:09:39.413 DEBUG [ResourceProcessor] - Thread ended
+30-05 23:09:39.413 DEBUG [ResourceProcessor] - Thread ended
+30-05 23:09:39.413 DEBUG [ResourceProcessor] - Thread ended
+30-05 23:09:39.414 INFO  [ClassPathXmlApplicationContext] - Closing org.springframework.context.support.ClassPathXmlApplicationContext@3c87521: startup date [Sat May 30 23:09:34 CEST 2015]; root of context hierarchy
+30-05 23:09:39.414 INFO  [ApplicationManager] - Closing application
+30-05 23:09:39.418 INFO  [LocalContainerEntityManagerFactoryBean] - Closing JPA EntityManagerFactory for persistence unit 'persistenceUnitHierarchyGenerator'
+30-05 23:09:39.420 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 23:09:39.420 DEBUG [ResourceProcessor] - Thread ended
+30-05 23:10:22.159 INFO  [ConfigurableApplicationContext] - #####################################################
+30-05 23:10:22.161 INFO  [ConfigurableApplicationContext] - ##########       Hierarchy Generator      ###########
+30-05 23:10:22.161 INFO  [ConfigurableApplicationContext] - #####################################################
+30-05 23:10:22.211 INFO  [ClassPathXmlApplicationContext] - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3c87521: startup date [Sat May 30 23:10:22 CEST 2015]; root of context hierarchy
+30-05 23:10:22.236 INFO  [XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [spring/application-config.xml]
+30-05 23:10:22.509 INFO  [XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [spring/db/jpa-config.xml]
+30-05 23:10:22.551 INFO  [XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [spring/db/hierarchy-generator-db-config.xml]
+30-05 23:10:22.703 INFO  [PropertySourcesPlaceholderConfigurer] - Loading properties file from class path resource [environments/development.properties]
+30-05 23:10:22.704 INFO  [PropertySourcesPlaceholderConfigurer] - Loading properties file from class path resource [project.properties]
+30-05 23:10:22.704 INFO  [PropertySourcesPlaceholderConfigurer] - Loading properties file from class path resource [constants.properties]
+30-05 23:10:22.719 INFO  [AutowiredAnnotationBeanPostProcessor] - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+30-05 23:10:22.902 INFO  [DefaultPersistenceUnitManager] - Found explicit default unit with name 'persistenceUnitHierarchyGenerator' in persistence.xml - overriding local default unit settings ('packagesToScan'/'mappingResources')
+30-05 23:10:22.944 INFO  [LocalContainerEntityManagerFactoryBean] - Building JPA container EntityManagerFactory for persistence unit 'persistenceUnitHierarchyGenerator'
+30-05 23:10:24.055 DEBUG [ApplicationManager] - Elaborating resources
+30-05 23:10:24.056 DEBUG [ProcessorsManager] - Creating processors
+30-05 23:10:24.057 DEBUG [ProcessorsManager] - Starting processors
+30-05 23:10:24.059 WARN  [ConfigurableApplicationContext] - !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+30-05 23:10:24.060 WARN  [ConfigurableApplicationContext] - !!!!!!!!!!!!! WARNING: DEVELOPMENT MODE !!!!!!!!!!!!!
+30-05 23:10:24.060 WARN  [ConfigurableApplicationContext] - !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+30-05 23:10:24.060 INFO  [ConfigurableApplicationContext] - Version: 0.0.1-SNAPSHOT
+30-05 23:10:24.406 DEBUG [ResourceProcessor] - 5, Processing resource http://gadm.geovocab.org/id/3/75085.rdf
+30-05 23:10:24.410 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 23:10:24.412 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 23:10:24.414 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 23:10:24.416 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 23:10:24.418 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 23:10:24.420 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 23:10:24.422 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 23:10:24.425 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 23:10:24.425 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 23:10:25.369 DEBUG [ResourceProcessor] - Extracting the label
+30-05 23:10:25.376 DEBUG [ResourceProcessor] - Searching same representation of the resource
+30-05 23:10:25.376 DEBUG [ResourceProcessor] - Searching parents of the resource
+30-05 23:10:25.413 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 23:10:25.416 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 23:10:25.419 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 23:10:25.421 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 23:10:25.424 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 23:10:25.428 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 23:10:25.430 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 23:10:25.432 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 23:10:25.434 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 23:10:25.461 DEBUG [ResourceProcessor] - Creating resource http://gadm.geovocab.org/id/1/2247
+30-05 23:10:25.501 DEBUG [ResourceProcessor] - Saving childOf connection between http://gadm.geovocab.org/id/3/75085.rdf and http://gadm.geovocab.org/id/1/2247
+30-05 23:10:25.519 DEBUG [ResourceProcessor] - Creating resource http://gadm.geovocab.org/id/2/26704
+30-05 23:10:25.526 DEBUG [ResourceProcessor] - Saving childOf connection between http://gadm.geovocab.org/id/3/75085.rdf and http://gadm.geovocab.org/id/2/26704
+30-05 23:10:25.536 DEBUG [ResourceProcessor] - Creating resource http://gadm.geovocab.org/id/0/177
+30-05 23:10:25.542 DEBUG [ResourceProcessor] - Saving childOf connection between http://gadm.geovocab.org/id/3/75085.rdf and http://gadm.geovocab.org/id/0/177
+30-05 23:10:25.578 DEBUG [ResourceProcessor] - 5, Processing resource http://gadm.geovocab.org/id/1/2247
+30-05 23:10:25.957 DEBUG [ResourceProcessor] - Extracting the label
+30-05 23:10:25.957 DEBUG [ResourceProcessor] - Searching same representation of the resource
+30-05 23:10:25.957 DEBUG [ResourceProcessor] - Searching parents of the resource
+30-05 23:10:25.959 DEBUG [ResourceProcessor] - Saving childOf connection between http://gadm.geovocab.org/id/1/2247 and http://gadm.geovocab.org/id/2/26704
+30-05 23:10:25.969 DEBUG [ResourceProcessor] - Saving childOf connection between http://gadm.geovocab.org/id/1/2247 and http://gadm.geovocab.org/id/0/177
+30-05 23:10:25.986 DEBUG [ResourceProcessor] - 5, Processing resource http://gadm.geovocab.org/id/2/26704
+30-05 23:10:26.344 DEBUG [ResourceProcessor] - Extracting the label
+30-05 23:10:26.344 DEBUG [ResourceProcessor] - Searching same representation of the resource
+30-05 23:10:26.344 DEBUG [ResourceProcessor] - Searching parents of the resource
+30-05 23:10:26.346 DEBUG [ResourceProcessor] - Saving childOf connection between http://gadm.geovocab.org/id/2/26704 and http://gadm.geovocab.org/id/1/2247
+30-05 23:10:26.361 DEBUG [ResourceProcessor] - Saving childOf connection between http://gadm.geovocab.org/id/2/26704 and http://gadm.geovocab.org/id/0/177
+30-05 23:10:26.386 DEBUG [ResourceProcessor] - 5, Processing resource http://gadm.geovocab.org/id/0/177
+30-05 23:10:26.417 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 23:10:26.419 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 23:10:26.422 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 23:10:26.425 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 23:10:26.428 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 23:10:26.430 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 23:10:26.432 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 23:10:26.435 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 23:10:26.437 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 23:10:27.421 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 23:10:27.423 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 23:10:27.424 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 23:10:27.428 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 23:10:27.431 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 23:10:27.433 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 23:10:27.435 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 23:10:27.437 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 23:10:27.439 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 23:10:27.582 DEBUG [ResourceProcessor] - Extracting the label
+30-05 23:10:27.583 DEBUG [ResourceProcessor] - Searching same representation of the resource
+30-05 23:10:27.583 DEBUG [ResourceProcessor] - Searching parents of the resource
+30-05 23:10:27.585 DEBUG [ResourceProcessor] - Saving childOf connection between http://gadm.geovocab.org/id/0/177 and http://gadm.geovocab.org/id/1/2247
+30-05 23:10:27.630 DEBUG [ResourceProcessor] - Saving childOf connection between http://gadm.geovocab.org/id/0/177 and http://gadm.geovocab.org/id/2/26704
+30-05 23:10:27.662 INFO  [ProcessorsManager] - Resource processing finished
+30-05 23:10:27.663 INFO  [ApplicationManager] - Resources elaboration finished
+30-05 23:10:27.663 DEBUG [ResourceProcessor] - Thread ended
+30-05 23:10:27.663 DEBUG [ResourceProcessor] - Thread ended
+30-05 23:10:27.663 DEBUG [ResourceProcessor] - Thread ended
+30-05 23:10:27.663 DEBUG [ResourceProcessor] - Thread ended
+30-05 23:10:27.663 DEBUG [ResourceProcessor] - Thread ended
+30-05 23:10:27.663 DEBUG [ResourceProcessor] - Thread ended
+30-05 23:10:27.663 DEBUG [ResourceProcessor] - Thread ended
+30-05 23:10:27.663 DEBUG [ResourceProcessor] - Thread ended
+30-05 23:10:27.663 DEBUG [ResourceProcessor] - Thread ended
+30-05 23:10:27.663 INFO  [ApplicationManager] - Closing application
+30-05 23:10:27.664 INFO  [ClassPathXmlApplicationContext] - Closing org.springframework.context.support.ClassPathXmlApplicationContext@3c87521: startup date [Sat May 30 23:10:22 CEST 2015]; root of context hierarchy
+30-05 23:10:27.665 INFO  [ApplicationManager] - Closing application
+30-05 23:10:27.669 INFO  [LocalContainerEntityManagerFactoryBean] - Closing JPA EntityManagerFactory for persistence unit 'persistenceUnitHierarchyGenerator'
+30-05 23:10:27.671 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 23:10:27.671 DEBUG [ResourceProcessor] - Thread ended
+30-05 23:24:55.642 INFO  [ConfigurableApplicationContext] - #####################################################
+30-05 23:24:55.644 INFO  [ConfigurableApplicationContext] - ##########       Hierarchy Generator      ###########
+30-05 23:24:55.644 INFO  [ConfigurableApplicationContext] - #####################################################
+30-05 23:24:55.692 INFO  [ClassPathXmlApplicationContext] - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3c87521: startup date [Sat May 30 23:24:55 CEST 2015]; root of context hierarchy
+30-05 23:24:55.719 INFO  [XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [spring/application-config.xml]
+30-05 23:24:55.992 INFO  [XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [spring/db/jpa-config.xml]
+30-05 23:24:56.029 INFO  [XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [spring/db/hierarchy-generator-db-config.xml]
+30-05 23:24:56.172 INFO  [PropertySourcesPlaceholderConfigurer] - Loading properties file from class path resource [environments/development.properties]
+30-05 23:24:56.173 INFO  [PropertySourcesPlaceholderConfigurer] - Loading properties file from class path resource [project.properties]
+30-05 23:24:56.173 INFO  [PropertySourcesPlaceholderConfigurer] - Loading properties file from class path resource [constants.properties]
+30-05 23:24:56.187 INFO  [AutowiredAnnotationBeanPostProcessor] - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+30-05 23:24:56.352 INFO  [DefaultPersistenceUnitManager] - Found explicit default unit with name 'persistenceUnitHierarchyGenerator' in persistence.xml - overriding local default unit settings ('packagesToScan'/'mappingResources')
+30-05 23:24:56.388 INFO  [LocalContainerEntityManagerFactoryBean] - Building JPA container EntityManagerFactory for persistence unit 'persistenceUnitHierarchyGenerator'
+30-05 23:24:57.499 DEBUG [ApplicationManager] - Elaborating resources
+30-05 23:24:57.499 DEBUG [ProcessorsManager] - Creating processors
+30-05 23:24:57.500 DEBUG [ProcessorsManager] - Starting processors
+30-05 23:24:57.504 WARN  [ConfigurableApplicationContext] - !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+30-05 23:24:57.504 WARN  [ConfigurableApplicationContext] - !!!!!!!!!!!!! WARNING: DEVELOPMENT MODE !!!!!!!!!!!!!
+30-05 23:24:57.505 WARN  [ConfigurableApplicationContext] - !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+30-05 23:24:57.505 INFO  [ConfigurableApplicationContext] - Version: 0.0.1-SNAPSHOT
+30-05 23:24:57.838 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 23:24:57.840 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 23:24:57.843 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 23:24:57.844 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 23:24:57.847 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 23:24:57.849 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 23:24:57.851 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 23:24:57.853 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 23:24:57.854 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 23:24:57.856 INFO  [ProcessorsManager] - Resource processing finished
+30-05 23:24:57.856 INFO  [ApplicationManager] - Resources elaboration finished
+30-05 23:24:57.856 DEBUG [ResourceProcessor] - Thread ended
+30-05 23:24:57.856 DEBUG [ResourceProcessor] - Thread ended
+30-05 23:24:57.856 DEBUG [ResourceProcessor] - Thread ended
+30-05 23:24:57.856 DEBUG [ResourceProcessor] - Thread ended
+30-05 23:24:57.856 INFO  [ApplicationManager] - Closing application
+30-05 23:24:57.856 DEBUG [ResourceProcessor] - Thread ended
+30-05 23:24:57.857 DEBUG [ResourceProcessor] - Thread ended
+30-05 23:24:57.857 DEBUG [ResourceProcessor] - Thread ended
+30-05 23:24:57.857 DEBUG [ResourceProcessor] - Thread ended
+30-05 23:24:57.857 DEBUG [ResourceProcessor] - Thread ended
+30-05 23:24:57.857 INFO  [ClassPathXmlApplicationContext] - Closing org.springframework.context.support.ClassPathXmlApplicationContext@3c87521: startup date [Sat May 30 23:24:55 CEST 2015]; root of context hierarchy
+30-05 23:24:57.858 INFO  [ApplicationManager] - Closing application
+30-05 23:24:57.861 INFO  [LocalContainerEntityManagerFactoryBean] - Closing JPA EntityManagerFactory for persistence unit 'persistenceUnitHierarchyGenerator'
+30-05 23:24:57.863 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 23:24:57.864 DEBUG [ResourceProcessor] - Thread ended
+30-05 23:25:20.666 INFO  [ConfigurableApplicationContext] - #####################################################
+30-05 23:25:20.668 INFO  [ConfigurableApplicationContext] - ##########       Hierarchy Generator      ###########
+30-05 23:25:20.668 INFO  [ConfigurableApplicationContext] - #####################################################
+30-05 23:25:20.717 INFO  [ClassPathXmlApplicationContext] - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3c87521: startup date [Sat May 30 23:25:20 CEST 2015]; root of context hierarchy
+30-05 23:25:20.741 INFO  [XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [spring/application-config.xml]
+30-05 23:25:21.010 INFO  [XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [spring/db/jpa-config.xml]
+30-05 23:25:21.047 INFO  [XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [spring/db/hierarchy-generator-db-config.xml]
+30-05 23:25:21.190 INFO  [PropertySourcesPlaceholderConfigurer] - Loading properties file from class path resource [environments/development.properties]
+30-05 23:25:21.191 INFO  [PropertySourcesPlaceholderConfigurer] - Loading properties file from class path resource [project.properties]
+30-05 23:25:21.191 INFO  [PropertySourcesPlaceholderConfigurer] - Loading properties file from class path resource [constants.properties]
+30-05 23:25:21.206 INFO  [AutowiredAnnotationBeanPostProcessor] - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+30-05 23:25:21.381 INFO  [DefaultPersistenceUnitManager] - Found explicit default unit with name 'persistenceUnitHierarchyGenerator' in persistence.xml - overriding local default unit settings ('packagesToScan'/'mappingResources')
+30-05 23:25:21.421 INFO  [LocalContainerEntityManagerFactoryBean] - Building JPA container EntityManagerFactory for persistence unit 'persistenceUnitHierarchyGenerator'
+30-05 23:25:22.562 DEBUG [ApplicationManager] - Elaborating resources
+30-05 23:25:22.562 DEBUG [ProcessorsManager] - Creating processors
+30-05 23:25:22.563 DEBUG [ProcessorsManager] - Starting processors
+30-05 23:25:22.565 WARN  [ConfigurableApplicationContext] - !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+30-05 23:25:22.565 WARN  [ConfigurableApplicationContext] - !!!!!!!!!!!!! WARNING: DEVELOPMENT MODE !!!!!!!!!!!!!
+30-05 23:25:22.565 WARN  [ConfigurableApplicationContext] - !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+30-05 23:25:22.565 INFO  [ConfigurableApplicationContext] - Version: 0.0.1-SNAPSHOT
+30-05 23:25:22.905 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 23:25:22.907 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 23:25:22.908 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 23:25:22.910 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 23:25:22.912 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 23:25:22.914 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 23:25:22.915 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 23:25:22.917 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 23:25:22.918 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 23:25:22.920 INFO  [ProcessorsManager] - Resource processing finished
+30-05 23:25:22.920 INFO  [ApplicationManager] - Resources elaboration finished
+30-05 23:25:22.920 DEBUG [ResourceProcessor] - Thread ended
+30-05 23:25:22.920 DEBUG [ResourceProcessor] - Thread ended
+30-05 23:25:22.920 DEBUG [ResourceProcessor] - Thread ended
+30-05 23:25:22.920 INFO  [ApplicationManager] - Closing application
+30-05 23:25:22.920 DEBUG [ResourceProcessor] - Thread ended
+30-05 23:25:22.920 DEBUG [ResourceProcessor] - Thread ended
+30-05 23:25:22.920 DEBUG [ResourceProcessor] - Thread ended
+30-05 23:25:22.920 DEBUG [ResourceProcessor] - Thread ended
+30-05 23:25:22.920 DEBUG [ResourceProcessor] - Thread ended
+30-05 23:25:22.921 DEBUG [ResourceProcessor] - Thread ended
+30-05 23:25:22.921 DEBUG [ResourceProcessor] - Thread is going to sleep
+30-05 23:25:22.921 DEBUG [ResourceProcessor] - Thread ended
