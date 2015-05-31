@@ -33,9 +33,14 @@ public class ProcessorsManager {
 	private ResourceSameAsRepository resourceSameAsRepository;
 	@Autowired
 	private ResourceParentRepository resourceParentsRepository;
+	@Autowired
+	private ResourceValidator resourceValidator;
 	
 	@Value("${processors.max_num}")
 	private int maxProcessorNumber;
+	
+	@Value("${resources.skip_sameas}")
+	private boolean skipSameAs;
 	
 	private Set<ResourceProcessor> processors;
 	private int activeProcessorsCount;
@@ -48,8 +53,8 @@ public class ProcessorsManager {
 	
 	public void startElaboration() {
 		log.debug("Creating processors");
-		for(int i = 0; i < maxProcessorNumber; i++) {
-			ResourceProcessor resProc = new ResourceProcessor(i,this,datasetsManager,resourceRepository,resourceSameAsRepository,resourceParentsRepository,false);
+		for(int i = 1; i <= maxProcessorNumber; i++) {
+			ResourceProcessor resProc = new ResourceProcessor(i,this,datasetsManager,resourceRepository,resourceSameAsRepository,resourceParentsRepository,resourceValidator,skipSameAs);
 			processors.add(resProc);
 			activeProcessorsCount++;
 		}

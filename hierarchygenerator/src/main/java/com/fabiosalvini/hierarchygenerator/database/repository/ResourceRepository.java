@@ -7,7 +7,7 @@ import org.springframework.data.jpa.repository.Query;
 import com.fabiosalvini.hierarchygenerator.database.model.Resource;
 
 
-public interface ResourceRepository extends org.springframework.data.repository.Repository<Resource,Integer> {
+public interface ResourceRepository extends org.springframework.data.repository.CrudRepository<Resource,Integer> {
 	
 	public Resource findById(Integer id);
 	public Resource findByUrl(String url);
@@ -15,5 +15,9 @@ public interface ResourceRepository extends org.springframework.data.repository.
 	@Query(value = "SELECT * FROM resources WHERE processed = false", nativeQuery = true)
 	public List<Resource> getResourceToBeProcessed();
 	
+	@Query(value = "SELECT * FROM resources WHERE label IS NULL", nativeQuery = true)
+	public List<Resource> getResourcesWithoutLabel();
+	
+	@SuppressWarnings("unchecked")
 	public Resource save(Resource resource);
 }

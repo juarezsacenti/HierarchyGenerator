@@ -1,8 +1,8 @@
 package com.fabiosalvini.hierarchygenerator.service;
 
-import java.io.IOException;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Set;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -13,6 +13,14 @@ import com.fabiosalvini.hierarchygenerator.database.model.ResourceSameAs;
 import com.fabiosalvini.hierarchygenerator.database.repository.ResourceParentRepository;
 import com.fabiosalvini.hierarchygenerator.database.repository.ResourceRepository;
 import com.fabiosalvini.hierarchygenerator.database.repository.ResourceSameAsRepository;
+import com.fabiosalvini.hierarchygenerator.dataset.config.Dataset;
+import com.fabiosalvini.hierarchygenerator.dataset.config.SparqlEndpoint;
+import com.hp.hpl.jena.query.Query;
+import com.hp.hpl.jena.query.QueryExecution;
+import com.hp.hpl.jena.query.QueryExecutionFactory;
+import com.hp.hpl.jena.query.QueryFactory;
+import com.hp.hpl.jena.query.QuerySolution;
+import com.hp.hpl.jena.query.ResultSet;
 import com.hp.hpl.jena.rdf.model.Model;
 import com.hp.hpl.jena.rdf.model.ModelFactory;
 import com.hp.hpl.jena.rdf.model.Property;
@@ -29,6 +37,7 @@ public class ResourceProcessor extends Thread {
 	private ResourceRepository resourceRepository;
 	private ResourceSameAsRepository resourceSameAsRepository;
 	private ResourceParentRepository resourceParentRepository;
+	private ResourceValidator resourceValidator;
 	
 	private int identifier;
 	private boolean skipSameAs;
@@ -40,6 +49,7 @@ public class ResourceProcessor extends Thread {
 			ResourceRepository resourceRepository, 
 			ResourceSameAsRepository resourceSameAsRepository,
 			ResourceParentRepository resourceParentRepository,
+			ResourceValidator resourceValidator,
 			boolean skipSameAs) {
 		this.identifier = identifier;
 		this.processorsManager = processorsManager;
@@ -47,6 +57,7 @@ public class ResourceProcessor extends Thread {
 		this.resourceRepository = resourceRepository;
 		this.resourceSameAsRepository = resourceSameAsRepository;
 		this.resourceParentRepository = resourceParentRepository;
+		this.resourceValidator = resourceValidator;
 		this.skipSameAs = skipSameAs;
 	}
 	
@@ -56,16 +67,21 @@ public class ResourceProcessor extends Thread {
 		while (!Thread.currentThread().isInterrupted()) {
             Resource res = processorsManager.getResourceToElaborate();
 			if(res != null) {
-				log.debug("[Thread {}] Processing resource {}", identifier, res.getUrl());
-				model.read(res.getUrl());
-				
-				extractLabel(res, model);
-				
-				if(!skipSameAs) {
-					searchSameAs(res, model);
+				log.info("[Thread {}] Processing resource {}", identifier, res.getUrl());
+				try {
+					model.read(res.getUrl());
+					
+					extractLabel(res, model);
+					
+					if(!skipSameAs) {
+						searchSameAs(res, model);
+						searchReversedSameAs(res);
+					}
+					
+					searchParents(res, model);
+				} catch(Exception e) {
+					log.error("Error processing resource {}: {}", res.getUrl(), e);
 				}
-				
-				searchParents(res, model);
 				
 				res.setProcessed(true);
 				res = resourceRepository.save(res);
@@ -80,26 +96,28 @@ public class ResourceProcessor extends Thread {
 				}
 			}
         }
-		log.debug("Thread ended");
+		log.debug("[Thread {}] ended", identifier);
 	}
 	
 	private void extractLabel(Resource res, Model model) {
 		log.debug("Extracting the label");
-		Property labelProperty = model.getProperty("http://www.w3.org/2000/01/rdf-schema#label");
-		Iterator<RDFNode> labelsIter = model.listObjectsOfProperty(labelProperty);
+		Iterator<String> labelProps = datasetsManager.getResourceLabelProperty(res).iterator();
 		String resLabel = null;
-		if(labelsIter.hasNext()) {
-			boolean foundEnglishLabel = false;
-			do {
-				String label = labelsIter.next().toString();
-				if(label.contains("@en")) {
-					foundEnglishLabel = true;
-				}
-				resLabel = getPrettyLabel(label);
-			} while(labelsIter.hasNext() && !foundEnglishLabel);
-		} else {
-			log.warn("Label not found for resource {}", res.getUrl());
+		while(labelProps.hasNext() && resLabel == null) {
+			Property labelProperty = model.getProperty(labelProps.next());
+			Iterator<RDFNode> labelsIter = model.listObjectsOfProperty(labelProperty);
+			if(labelsIter.hasNext()) {
+				boolean foundEnglishLabel = false;
+				do {
+					String label = labelsIter.next().toString();
+					if(label.contains("@en")) {
+						foundEnglishLabel = true;
+					}
+					resLabel = getPrettyLabel(label);
+				} while(labelsIter.hasNext() && !foundEnglishLabel);
+			}
 		}
+		
 		res.setLabel(resLabel);
 	}
 	
@@ -112,22 +130,67 @@ public class ResourceProcessor extends Thread {
 			while(sameAsIter.hasNext()) {
 				String sameResUrl = sameAsIter.next().toString();
 				if(!res.getUrl().equals(sameResUrl)) {
-					Resource sameRes = resourceRepository.findByUrl(sameResUrl);
-					if(sameRes == null) {
-						log.debug("Creating resource {}", sameResUrl);
-						sameRes = new Resource();
-						sameRes.setUrl(sameResUrl);
-						sameRes = resourceRepository.save(sameRes);
+					addSameAsConnection(res, sameResUrl);
+				}
+			}
+		}
+	}
+	
+	private void searchReversedSameAs(Resource res) {
+		Set<Dataset> linkedByDatasets = datasetsManager.getLinkedByDatasets(res);
+		for(Dataset dataset: linkedByDatasets) {
+			SparqlEndpoint sparqlEndpoint = dataset.getSparqlEndpoint();
+			if(sparqlEndpoint != null) {
+				List<String> sameAsProps = dataset.getSameAsProperties();
+				if(sameAsProps != null && sameAsProps.size() > 0) {
+					
+					Iterator<String> sameAsIter = sameAsProps.iterator();
+					String queryString = "SELECT ?r WHERE { " +
+			        		"{ ?r <"+sameAsIter.next()+"> <"+res.getUrl()+"> }";
+					while(sameAsIter.hasNext()) {
+						queryString += " UNION { ?r <"+sameAsIter.next()+"> <"+res.getUrl()+"> }";
 					}
-					log.debug("Saving sameAs connection between {} and {}", res.getUrl(), sameRes.getUrl());
-					ResourceSameAs resConnection = resourceSameAsRepository.getByResources(res.getId(), sameRes.getId());
-					if(resConnection == null) {
-						resConnection = new ResourceSameAs();
-						resConnection.setFirstResource(res);
-						resConnection.setSecondResource(sameRes);
-						resConnection = resourceSameAsRepository.save(resConnection);
+			        queryString += " }";
+			
+					Query query = QueryFactory.create(queryString);
+					QueryExecution qexec = QueryExecutionFactory.sparqlService(sparqlEndpoint.getUrl(), query);
+					
+					try {
+						log.debug("Executing query at endpoint {}", sparqlEndpoint.getUrl());
+					    ResultSet results = qexec.execSelect();
+					    while(results.hasNext()) {
+					    	QuerySolution row = results.next();
+					    	RDFNode node = row.get("r");
+					    	
+					    	addSameAsConnection(res, node.toString());
+					    }
+					} catch(Exception e) {
+						log.error("Error during query execution and the endpoint: {}, {}", sparqlEndpoint.getUrl(), e);
+					}
+					finally {
+					   qexec.close();
 					}
 				}
+			}
+		}
+	}
+	
+	private void addSameAsConnection(Resource res, String sameResUrl) {
+		if(resourceValidator.isValid(sameResUrl)) {
+			Resource sameRes = resourceRepository.findByUrl(sameResUrl);
+			if(sameRes == null) {
+				log.debug("Creating resource {}", sameResUrl);
+				sameRes = new Resource();
+				sameRes.setUrl(sameResUrl);
+				sameRes = resourceRepository.save(sameRes);
+			}
+			log.debug("Saving sameAs connection between {} and {}", res.getUrl(), sameRes.getUrl());
+			ResourceSameAs resConnection = resourceSameAsRepository.getByResources(res.getId(), sameRes.getId());
+			if(resConnection == null) {
+				resConnection = new ResourceSameAs();
+				resConnection.setFirstResource(res);
+				resConnection.setSecondResource(sameRes);
+				resConnection = resourceSameAsRepository.save(resConnection);
 			}
 		}
 	}
@@ -140,7 +203,7 @@ public class ResourceProcessor extends Thread {
 			Iterator<RDFNode> childOfIter = model.listObjectsOfProperty(childOfProperty);
 			while(childOfIter.hasNext()) {
 				String parentResUrl = childOfIter.next().toString();
-				if(!res.getUrl().equals(parentResUrl)) {
+				if(!res.getUrl().equals(parentResUrl) && resourceValidator.isValid(parentResUrl)) {
 					Resource parentRes = resourceRepository.findByUrl(parentResUrl);
 					if(parentRes == null) {
 						log.debug("Creating resource {}", parentResUrl);

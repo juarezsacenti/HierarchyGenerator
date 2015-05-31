@@ -9,9 +9,11 @@ public class Dataset {
 	
 	private Integer id;
 	private String domain;
+	private String resourceLabel;
 	private List<Integer> linkedWithDatasets;
 	private List<String> sameAsProperties;
 	private List<String> childOfProperties;
+	private SparqlEndpoint sparqlEndpoint;
 	
 	public Dataset() {
 		linkedWithDatasets = Collections.emptyList();
@@ -33,6 +35,15 @@ public class Dataset {
 
 	public void setDomain(String domain) {
 		this.domain = domain;
+	}
+
+	@JsonProperty("resource_label")
+	public String getResourceLabel() {
+		return resourceLabel;
+	}
+
+	public void setResourceLabel(String resourceLabel) {
+		this.resourceLabel = resourceLabel;
 	}
 
 	@JsonProperty("linked_with_datasets")
@@ -60,6 +71,15 @@ public class Dataset {
 
 	public void setChildOfProperties(List<String> childOfProperties) {
 		this.childOfProperties = childOfProperties;
+	}
+
+	@JsonProperty("sparql_endpoint")
+	public SparqlEndpoint getSparqlEndpoint() {
+		return sparqlEndpoint;
+	}
+
+	public void setSparqlEndpoint(SparqlEndpoint sparqlEndpoint) {
+		this.sparqlEndpoint = sparqlEndpoint;
 	}
 	
 }

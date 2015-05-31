@@ -13,7 +13,9 @@
     },
     {
       "id":2,
-      "domain":"geonames.org"
+      "domain":"geonames.org",
+      "resource_label":"http://www.geonames.org/ontology#name",
+      "child_of_properties":["http://www.geonames.org/ontology#parentCountry","http://www.geonames.org/ontology#parentADM1","http://www.geonames.org/ontology#parentADM2","http://www.geonames.org/ontology#parentADM3","http://www.geonames.org/ontology#parentADM4"]
     },
     {
       "id":3,
@@ -31,5 +33,6 @@
         "max_requests_second":10
       }
     }
-  ]
+  ],
+  "exclude_urls":["//.+dbpedia.org"]
 }
