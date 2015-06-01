@@ -1,11 +1,15 @@
 package com.fabiosalvini.hierarchygenerator.database.model;
 
+import java.util.Date;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
 import javax.persistence.UniqueConstraint;
 
 @Entity
@@ -15,16 +19,18 @@ public class Resource {
 	private int id;
 	private String url;
 	private String label;
-	private boolean processed;
+	private Date processedAt;
+	private Integer weight;
 	
 	public Resource() {
 	}
 
-	public Resource(int id, String url, String label, boolean processed) {
+	public Resource(int id, String url, String label, Date processedAt, Integer weight) {
 		this.id = id;
 		this.url = url;
 		this.label = label;
-		this.processed = processed;
+		this.processedAt = processedAt;
+		this.weight = weight;
 	}
 	
 	@Id
@@ -56,13 +62,23 @@ public class Resource {
 		this.label = label;
 	}
 
-	@Column(name = "processed", nullable = false)
-	public boolean isProcessed() {
-		return processed;
+	@Temporal(TemporalType.TIMESTAMP)
+	@Column(name = "processed_at", length = 29)
+	public Date getProcessedAt() {
+		return processedAt;
 	}
 
-	public void setProcessed(boolean processed) {
-		this.processed = processed;
+	public void setProcessedAt(Date processedAt) {
+		this.processedAt = processedAt;
+	}
+	
+	@Column(name = "weight")
+	public Integer getWeight() {
+		return weight;
+	}
+
+	public void setWeight(Integer weight) {
+		this.weight = weight;
 	}
 
 	@Override

@@ -51,7 +51,7 @@ public class HierarchyGeneratorApplication {
 		
 		log.info("Version: {}", getApplicationVersion());
 		
-		while (true) {
+		while (context.isActive()) {
 			synchronized (running) {
 				if(!running) {
 					break;

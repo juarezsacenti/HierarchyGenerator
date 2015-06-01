@@ -2,7 +2,15 @@ CREATE TABLE resources (
   id serial PRIMARY KEY,
   url character varying(255) NOT NULL UNIQUE,
   label character varying(255),
-  processed boolean NOT NULL DEFAULT false
+  processed_at timestamp without time zone,
+  weight integer
+);
+
+CREATE TABLE entities_mappings (
+  id serial PRIMARY KEY,
+  entity_id integer NOT NULL,
+  resource_id integer NOT NULL REFERENCES resources (id),
+  UNIQUE(entity_id, resource_id)
 );
 
 CREATE TABLE resources_parents (

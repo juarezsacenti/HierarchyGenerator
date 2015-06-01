@@ -1,5 +1,6 @@
 package com.fabiosalvini.hierarchygenerator.service;
 
+import java.util.Date;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
@@ -63,8 +64,8 @@ public class ResourceProcessor extends Thread {
 	
 	@Override
 	public void run() {
-		Model model = ModelFactory.createDefaultModel();
 		while (!Thread.currentThread().isInterrupted()) {
+			Model model = ModelFactory.createDefaultModel();
             Resource res = processorsManager.getResourceToElaborate();
 			if(res != null) {
 				log.info("[Thread {}] Processing resource {}", identifier, res.getUrl());
@@ -83,7 +84,7 @@ public class ResourceProcessor extends Thread {
 					log.error("Error processing resource {}: {}", res.getUrl(), e);
 				}
 				
-				res.setProcessed(true);
+				res.setProcessedAt(new Date());
 				res = resourceRepository.save(res);
 			} else {
 				try {
@@ -199,6 +200,7 @@ public class ResourceProcessor extends Thread {
 		log.debug("Searching parents of the resource");
 		List<String> childOfProperties = datasetsManager.getChildOfProperties(res);
 		for(String childOfProp: childOfProperties) {
+			log.warn("Resource: {}, Property: {}", res.getUrl(), childOfProp);
 			Property childOfProperty = model.getProperty(childOfProp);
 			Iterator<RDFNode> childOfIter = model.listObjectsOfProperty(childOfProperty);
 			while(childOfIter.hasNext()) {
