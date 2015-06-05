@@ -5,7 +5,6 @@
 		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
-	<!-- Proprietà applicative -->
 	<context:property-placeholder
 		location="classpath:environments/${spring.profiles.active}.properties, 
 		classpath:project.properties, 

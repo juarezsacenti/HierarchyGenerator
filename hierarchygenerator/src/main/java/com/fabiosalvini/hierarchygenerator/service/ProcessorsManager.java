@@ -11,7 +11,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
-import com.fabiosalvini.hierarchygenerator.applicationmanger.ApplicationManager;
+import com.fabiosalvini.hierarchygenerator.applicationmanager.ApplicationManager;
 import com.fabiosalvini.hierarchygenerator.database.model.Resource;
 import com.fabiosalvini.hierarchygenerator.database.repository.ResourceParentRepository;
 import com.fabiosalvini.hierarchygenerator.database.repository.ResourceRepository;

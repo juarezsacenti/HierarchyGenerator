@@ -1,4 +1,4 @@
-package com.fabiosalvini.hierarchygenerator.applicationmanger;
+package com.fabiosalvini.hierarchygenerator.applicationmanager;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationListener;

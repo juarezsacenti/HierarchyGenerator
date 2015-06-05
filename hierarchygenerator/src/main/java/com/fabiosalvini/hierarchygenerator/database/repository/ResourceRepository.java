@@ -35,6 +35,11 @@ public interface ResourceRepository extends org.springframework.data.repository.
 			     + "INNER JOIN entities_mappings em ON rrp.child_resource_id = em.resource_id", nativeQuery = true)
 	public int getResourceWeigth(@Param("resourceId")Integer resourceId);
 	
+	@Query(value = "SELECT * "
+			     + "FROM resources r "
+			     + "WHERE (SELECT COUNT(*) FROM resources_parents WHERE child_resource_id = r.id) > 1", nativeQuery = true)
+	public List<Resource> getResourcesWithMultipleParents();
+	
 	@SuppressWarnings("unchecked")
 	public Resource save(Resource resource);
 }

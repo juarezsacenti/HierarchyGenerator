@@ -2,6 +2,8 @@ package com.fabiosalvini.hierarchygenerator.service;
 
 import java.util.HashSet;
 import java.util.Iterator;
+import java.util.LinkedList;
+import java.util.List;
 import java.util.Set;
 
 import org.slf4j.Logger;
@@ -39,6 +41,7 @@ public class HierarchyBuilder {
 		mergeResources();
 		deleteResourceConnectionsToAncestors();
 		weigthResources();
+		removeMultipleParents();
 	}
 	
 	/**
@@ -71,7 +74,7 @@ public class HierarchyBuilder {
 			}
 			
 			//Update resource parents
-			Set<ResourceParent> resParents = resourceParentsRepository.findByChildResource(resToMerge);
+			List<ResourceParent> resParents = resourceParentsRepository.findByChildResource(resToMerge);
 			for(ResourceParent resParent: resParents) {
 				if(resourceParentsRepository.getByResources(resToKeep.getId(), resParent.getParentResource().getId()) == null) {
 					resParent.setChildResource(resToKeep);
@@ -80,7 +83,7 @@ public class HierarchyBuilder {
 					resourceParentsRepository.delete(resParent);
 				}
 			}
-			Set<ResourceParent> resChildrens = resourceParentsRepository.findByParentResource(resToMerge);
+			List<ResourceParent> resChildrens = resourceParentsRepository.findByParentResource(resToMerge);
 			for(ResourceParent resChildren: resChildrens) {
 				if(resourceParentsRepository.getByResources(resChildren.getChildResource().getId(), resToKeep.getId()) == null) {
 					resChildren.setParentResource(resToKeep);
@@ -122,9 +125,9 @@ public class HierarchyBuilder {
 		Iterator<Resource> resourcesIter = resourceRepository.findAll().iterator();
 		while(resourcesIter.hasNext()) {
 			Resource res = resourcesIter.next();
-			Set<ResourceParent> parents = resourceParentsRepository.findByChildResource(res);
+			List<ResourceParent> parents = resourceParentsRepository.findByChildResource(res);
 			do {
-				Set<ResourceParent> parentsOfParents = new HashSet<ResourceParent>();
+				List<ResourceParent> parentsOfParents = new LinkedList<ResourceParent>();
 				for(ResourceParent resParent: parents) {
 					parentsOfParents.addAll(resourceParentsRepository.findByChildResource(resParent.getParentResource()));
 				}
@@ -150,6 +153,30 @@ public class HierarchyBuilder {
 			int resWeight = resourceRepository.getResourceWeigth(res.getId());
 			res.setWeight(resWeight);
 			res = resourceRepository.save(res);
+		}
+	}
+	
+	/**
+	 * Keep only the parent with the higher weight for the resources that have multiple parents.
+	 */
+	private void removeMultipleParents() {
+		List<Resource> resources = resourceRepository.getResourcesWithMultipleParents();
+		for(Resource res: resources) {
+			// Find the parent with the higher weight
+			List<ResourceParent> resParents = resourceParentsRepository.findByChildResource(res); 
+			int maxWeightIndex = 0;
+			for(int i = 1; i < resParents.size(); i++) {
+				if(resParents.get(i).getParentResource().getWeight() > resParents.get(0).getParentResource().getWeight()) {
+					maxWeightIndex = i;
+				}
+			}
+			// Delete all the other parents connections
+			for(int i = 0; i < resParents.size(); i++) {
+				if(i != maxWeightIndex) {
+					resourceParentsRepository.delete(resParents.get(i));
+				}
+			}
+			
 		}
 	}
 

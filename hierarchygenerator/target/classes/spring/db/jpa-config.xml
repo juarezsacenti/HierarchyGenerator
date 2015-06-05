@@ -8,8 +8,7 @@
 		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd
 		http://www.springframework.org/schema/data/jpa http://www.springframework.org/schema/data/jpa/spring-jpa-1.0.xsd">
 
-	
-	<!-- Caricamento impostazioni DB HierarchyGenerator -->
+
 	<import resource="hierarchy-generator-db-config.xml" />
 		
 	<jpa:repositories base-package="com.fabiosalvini.hierarchygenerator.database.repository"

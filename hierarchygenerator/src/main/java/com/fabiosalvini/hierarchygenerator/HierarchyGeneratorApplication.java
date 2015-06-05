@@ -12,10 +12,8 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 
 public class HierarchyGeneratorApplication {
-	
-    final static Logger logger = LoggerFactory.getLogger(HierarchyGeneratorApplication.class);
     
-	private static final Logger log = LoggerFactory.getLogger(ConfigurableApplicationContext.class);
+	private static final Logger log = LoggerFactory.getLogger(HierarchyGeneratorApplication.class);
 	
 	private static ConfigurableApplicationContext context;
 	

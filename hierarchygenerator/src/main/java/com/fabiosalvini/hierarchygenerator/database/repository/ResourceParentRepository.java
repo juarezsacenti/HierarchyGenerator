@@ -1,6 +1,6 @@
 package com.fabiosalvini.hierarchygenerator.database.repository;
 
-import java.util.Set;
+import java.util.List;
 
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
@@ -12,8 +12,8 @@ import com.fabiosalvini.hierarchygenerator.database.model.ResourceParent;
 public interface ResourceParentRepository extends org.springframework.data.repository.CrudRepository<ResourceParent,Integer> {
 	
 	public ResourceParent findById(Integer id);
-	public Set<ResourceParent> findByChildResource(Resource childResource);
-	public Set<ResourceParent> findByParentResource(Resource parentResource);
+	public List<ResourceParent> findByChildResource(Resource childResource);
+	public List<ResourceParent> findByParentResource(Resource parentResource);
 	
 	@Query(value = "SELECT * "
 			     + "FROM resources_parents "
