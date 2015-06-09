@@ -3,6 +3,7 @@ CREATE TABLE resources (
   url character varying(255) NOT NULL UNIQUE,
   label character varying(255),
   processed_at timestamp without time zone,
+  level integer,
   weight integer
 );
 

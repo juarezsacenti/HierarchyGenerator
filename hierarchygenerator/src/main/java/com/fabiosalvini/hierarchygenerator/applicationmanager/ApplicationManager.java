@@ -7,7 +7,7 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.stereotype.Service;
 
-import com.fabiosalvini.hierarchygenerator.database.repository.ResourceRepository;
+import com.fabiosalvini.hierarchygenerator.service.DimensionCreator;
 import com.fabiosalvini.hierarchygenerator.service.HierarchyBuilder;
 import com.fabiosalvini.hierarchygenerator.service.ProcessorsManager;
 
@@ -24,7 +24,7 @@ public class ApplicationManager {
 	@Autowired
 	private HierarchyBuilder hierarchyBuilder;
 	@Autowired
-	private ResourceRepository resourceRepository;
+	private DimensionCreator dimensionCreator;
 
 	public ApplicationManager() {
 	}
@@ -36,9 +36,8 @@ public class ApplicationManager {
 	
 	public void resourceElaborationFinished() {
 		log.info("Resources elaboration finished");
-		/*List<Resource> resToDelete = resourceRepository.getResourcesWithoutLabel();
-		resourceRepository.delete(resToDelete);*/
 		hierarchyBuilder.buildHierarchies();
+		dimensionCreator.createDimensions();
 		stop();
 	}
 

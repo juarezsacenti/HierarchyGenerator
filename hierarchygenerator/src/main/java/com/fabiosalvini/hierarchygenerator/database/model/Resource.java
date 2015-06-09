@@ -20,16 +20,18 @@ public class Resource {
 	private String url;
 	private String label;
 	private Date processedAt;
+	private Integer level;
 	private Integer weight;
 	
 	public Resource() {
 	}
 
-	public Resource(int id, String url, String label, Date processedAt, Integer weight) {
+	public Resource(int id, String url, String label, Date processedAt, Integer level, Integer weight) {
 		this.id = id;
 		this.url = url;
 		this.label = label;
 		this.processedAt = processedAt;
+		this.level = level;
 		this.weight = weight;
 	}
 	
@@ -70,6 +72,15 @@ public class Resource {
 
 	public void setProcessedAt(Date processedAt) {
 		this.processedAt = processedAt;
+	}
+	
+	@Column(name = "level")
+	public Integer getLevel() {
+		return level;
+	}
+
+	public void setLevel(Integer level) {
+		this.level = level;
 	}
 	
 	@Column(name = "weight")

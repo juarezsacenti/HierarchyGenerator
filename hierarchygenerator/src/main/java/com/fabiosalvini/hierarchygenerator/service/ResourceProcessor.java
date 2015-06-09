@@ -200,7 +200,6 @@ public class ResourceProcessor extends Thread {
 		log.debug("Searching parents of the resource");
 		List<String> childOfProperties = datasetsManager.getChildOfProperties(res);
 		for(String childOfProp: childOfProperties) {
-			log.warn("Resource: {}, Property: {}", res.getUrl(), childOfProp);
 			Property childOfProperty = model.getProperty(childOfProp);
 			Iterator<RDFNode> childOfIter = model.listObjectsOfProperty(childOfProperty);
 			while(childOfIter.hasNext()) {

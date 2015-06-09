@@ -40,6 +40,16 @@ public interface ResourceRepository extends org.springframework.data.repository.
 			     + "WHERE (SELECT COUNT(*) FROM resources_parents WHERE child_resource_id = r.id) > 1", nativeQuery = true)
 	public List<Resource> getResourcesWithMultipleParents();
 	
+	@Query(value = "SELECT * "
+		     + "FROM resources r "
+		     + "WHERE NOT EXISTS (SELECT * FROM resources_parents WHERE child_resource_id = r.id)", nativeQuery = true)
+	public List<Resource> getRootResources();
+	
+	@Query(value = "SELECT COUNT(*) "
+		     + "FROM entities_mappings "
+		     + "WHERE resource_id = :resourceId", nativeQuery = true)
+	public int getResourceEntitiesCount(@Param("resourceId")Integer resourceId);
+	
 	@SuppressWarnings("unchecked")
 	public Resource save(Resource resource);
 }

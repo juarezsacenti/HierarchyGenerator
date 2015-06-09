@@ -38,9 +38,11 @@ public class HierarchyBuilder {
 	}
 	
 	public void buildHierarchies() {
+		log.info("Merging resources");
 		mergeResources();
+		log.debug("Deleting resources connections to ancestors");
 		deleteResourceConnectionsToAncestors();
-		weigthResources();
+		log.info("Removing multiple parents");
 		removeMultipleParents();
 	}
 	
@@ -48,7 +50,6 @@ public class HierarchyBuilder {
 	 * Delete all the sameAs connections, merging equal resources together.
 	 */
 	private void mergeResources() {
-		log.info("Merging resources");
 		ResourceSameAs resSameAs = resourceSameAsRepository.getOne();
 		while(resSameAs != null) {
 			Resource resToKeep;
@@ -62,7 +63,7 @@ public class HierarchyBuilder {
 			}
 			
 			// Update entity mappings
-			Set<EntityMapping> eMappings = entityMappingRepository.findByResource(resToMerge);
+			List<EntityMapping> eMappings = entityMappingRepository.findByResource(resToMerge);
 			for(EntityMapping eMap: eMappings) {
 				if(entityMappingRepository.getByEntityIdAndResource(eMap.getId(), resToKeep.getId()) == null) {
 					EntityMapping newEMap = new EntityMapping();
@@ -121,7 +122,6 @@ public class HierarchyBuilder {
 	 * Delete parent relations between a resource and all of its ancestors (except the parent).
 	 */
 	private void deleteResourceConnectionsToAncestors() {
-		log.debug("Deleting resources connections to ancestors");
 		Iterator<Resource> resourcesIter = resourceRepository.findAll().iterator();
 		while(resourcesIter.hasNext()) {
 			Resource res = resourcesIter.next();
@@ -143,23 +143,9 @@ public class HierarchyBuilder {
 	}
 	
 	/**
-	 * Weight the resources. A resource weight is the number of distinct entities "contained" by the resource.
-	 */
-	private void weigthResources() {
-		log.debug("Weighting resources");
-		Iterator<Resource> resourcesIter = resourceRepository.findAll().iterator();
-		while(resourcesIter.hasNext()) {
-			Resource res = resourcesIter.next();
-			int resWeight = resourceRepository.getResourceWeigth(res.getId());
-			res.setWeight(resWeight);
-			res = resourceRepository.save(res);
-		}
-	}
-	
-	/**
 	 * Keep only the parent with the higher weight for the resources that have multiple parents.
 	 */
-	private void removeMultipleParents() {
+	/*private void removeMultipleParents() {
 		List<Resource> resources = resourceRepository.getResourcesWithMultipleParents();
 		for(Resource res: resources) {
 			// Find the parent with the higher weight
@@ -178,6 +164,55 @@ public class HierarchyBuilder {
 			}
 			
 		}
+	}*/
+	
+	/**
+	 * Keep only the parent with the highest level
+	 */
+	private void removeMultipleParents() {
+		List<Resource> resources = resourceRepository.getResourcesWithMultipleParents();
+		for(Resource res: resources) {
+			List<ResourceParent> resParents = resourceParentsRepository.findByChildResource(res); 
+			ResourceParent higherResParent = resParents.get(0);
+			int higherLvl = getResourceLevel(higherResParent.getParentResource().getId());
+			for(int i = 1; i < resParents.size(); i++) {
+				int lvl = getResourceLevel(resParents.get(i).getParentResource().getId());
+				if(lvl > higherLvl) {
+					resourceParentsRepository.delete(higherResParent);
+					higherResParent = resParents.get(i);
+					higherLvl = lvl;
+				} else {
+					resourceParentsRepository.delete(resParents.get(i));
+				}
+			}
+		}
+	}
+	
+	/**
+	 * Get the hierarchy level of the resource.
+	 * @param resourceId id of the resource to calculate the level
+	 * @return the level of the resource
+	 */
+	private int getResourceLevel(Integer resourceId) {
+		Resource res = resourceRepository.findById(resourceId);
+		if(res.getLevel() != null) {
+			return res.getLevel();
+		}
+		List<ResourceParent> resParent = resourceParentsRepository.findByChildResource(res);
+		if(resParent == null || resParent.size() == 0) {
+			res.setLevel(0);
+		} else {
+			Integer maxParentLevel = getResourceLevel(resParent.get(0).getParentResource().getId());
+			for(int i = 1; i < resParent.size(); i++) {
+				Integer lvl = getResourceLevel(resParent.get(i).getParentResource().getId());
+				if(lvl > maxParentLevel) {
+					maxParentLevel = lvl;
+				}
+			}
+			res.setLevel(maxParentLevel + 1);
+		}
+		res = resourceRepository.save(res);
+		return res.getLevel();
 	}
 
 }
