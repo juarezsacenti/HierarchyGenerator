@@ -21,18 +21,18 @@ public class Resource {
 	private String label;
 	private Date processedAt;
 	private Integer level;
-	private Integer weight;
+	private Integer hits;
 	
 	public Resource() {
 	}
 
-	public Resource(int id, String url, String label, Date processedAt, Integer level, Integer weight) {
+	public Resource(int id, String url, String label, Date processedAt, Integer level, Integer hits) {
 		this.id = id;
 		this.url = url;
 		this.label = label;
 		this.processedAt = processedAt;
 		this.level = level;
-		this.weight = weight;
+		this.hits = hits;
 	}
 	
 	@Id
@@ -83,13 +83,13 @@ public class Resource {
 		this.level = level;
 	}
 	
-	@Column(name = "weight")
-	public Integer getWeight() {
-		return weight;
+	@Column(name = "hits")
+	public Integer getHits() {
+		return hits;
 	}
 
-	public void setWeight(Integer weight) {
-		this.weight = weight;
+	public void setHits(Integer hits) {
+		this.hits = hits;
 	}
 
 	@Override

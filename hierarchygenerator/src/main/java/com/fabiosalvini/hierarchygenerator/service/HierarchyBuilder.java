@@ -1,6 +1,5 @@
 package com.fabiosalvini.hierarchygenerator.service;
 
-import java.util.HashSet;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
@@ -40,8 +39,8 @@ public class HierarchyBuilder {
 	public void buildHierarchies() {
 		log.info("Merging resources");
 		mergeResources();
-		log.debug("Deleting resources connections to ancestors");
-		deleteResourceConnectionsToAncestors();
+		log.info("Deleting resources connections to ancestors");
+		//deleteResourceConnectionsToAncestors();
 		log.info("Removing multiple parents");
 		removeMultipleParents();
 	}
@@ -79,7 +78,9 @@ public class HierarchyBuilder {
 			for(ResourceParent resParent: resParents) {
 				if(resourceParentsRepository.getByResources(resToKeep.getId(), resParent.getParentResource().getId()) == null) {
 					resParent.setChildResource(resToKeep);
-					resParent = resourceParentsRepository.save(resParent);
+					if(resParent.getChildResource().getId() != resParent.getParentResource().getId()) {
+						resParent = resourceParentsRepository.save(resParent);
+					}
 				} else {
 					resourceParentsRepository.delete(resParent);
 				}
@@ -88,7 +89,9 @@ public class HierarchyBuilder {
 			for(ResourceParent resChildren: resChildrens) {
 				if(resourceParentsRepository.getByResources(resChildren.getChildResource().getId(), resToKeep.getId()) == null) {
 					resChildren.setParentResource(resToKeep);
-					resChildren = resourceParentsRepository.save(resChildren);
+					if(resChildren.getChildResource().getId() != resChildren.getParentResource().getId()) {
+						resChildren = resourceParentsRepository.save(resChildren);
+					}
 				} else {
 					resourceParentsRepository.delete(resChildren);
 				}
@@ -138,6 +141,7 @@ public class HierarchyBuilder {
 					}
 				}
 				parents = parentsOfParents;
+				
 			} while(parents.size() > 0);
 		}
 	}

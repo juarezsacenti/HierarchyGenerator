@@ -9,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
+import com.fabiosalvini.hierarchygenerator.database.model.Dimension;
 import com.fabiosalvini.hierarchygenerator.database.model.EntityMapping;
 import com.fabiosalvini.hierarchygenerator.database.model.Resource;
 import com.fabiosalvini.hierarchygenerator.database.model.ResourceParent;
@@ -80,7 +81,7 @@ public class DimensionCreator {
 		for(ResourceParent resPar : resChildren) {
 			weight += filterResources(resPar.getChildResource());
 		}
-		root.setWeight(weight);
+		root.setHits(weight);
 		if(weight < threshold) {
 			root.setLabel(otherName);
 		}
@@ -150,15 +151,20 @@ public class DimensionCreator {
 	 */
 	private Resource createRoot() {
 		List<Resource> rootResources = resourceRepository.getRootResources();
-		Resource root = new Resource();
-		root.setLabel(rootName);
-		root.setUrl("http://root");
-		root = resourceRepository.save(root);
+		Resource root = resourceRepository.findByUrl("http://root");
+		if(root == null) {
+			root = new Resource();
+			root.setLabel(rootName);
+			root.setUrl("http://root");
+			root = resourceRepository.save(root);
+		}
 		for(Resource res : rootResources) {
-			ResourceParent resParent = new ResourceParent();
-			resParent.setChildResource(res);
-			resParent.setParentResource(root);
-			resParent = resourceParentsRepository.save(resParent);
+			if(res.getId() != root.getId()) {
+				ResourceParent resParent = new ResourceParent();
+				resParent.setChildResource(res);
+				resParent.setParentResource(root);
+				resParent = resourceParentsRepository.save(resParent);
+			}
 		}
 		return root;
 	}
@@ -181,10 +187,25 @@ public class DimensionCreator {
 	}
 	
 	private void saveDimensions(int maxDepth) {
-		dimensionRepository.createDimensionTable(maxDepth);
 		Iterable<EntityMapping> entitiesMap = entityMappingRepository.findAll();
 		for(EntityMapping eMap : entitiesMap) {
-			dimensionRepository.saveEntityDimension(eMap.getEntityId(), eMap.getResource());
+			Integer entityId = eMap.getEntityId();
+			Resource res = eMap.getResource();
+			int levelDistance = 0;
+			while(res != null) {
+				Dimension dim = new Dimension();
+				dim.setEntityId(entityId);
+				dim.setLevelName(res.getLabel());
+				dim.setLevelDistance(levelDistance);
+				dim = dimensionRepository.save(dim);
+				List<ResourceParent> resParents = resourceParentsRepository.findByChildResource(res);
+				if(resParents != null && resParents.size() > 0) {
+					res = resParents.get(0).getParentResource();
+				} else {
+					res = null;
+				}
+				levelDistance++;
+			}
 		}
 	}
 	

@@ -25,7 +25,7 @@
     {
       "id":4,
       "domain":"linkedgeodata.org",
-      "linked_with_datasets":[1],
+      "linked_with_datasets":[1,3],
       "sameas_properties":["http://www.w3.org/2002/07/owl#sameAs","http://linkedgeodata.org/ontology/gadmSameAs"],
       "sparql_endpoint": 
       {
